@@ -7,7 +7,7 @@ import arun from '../assets/svg/arun-new-1.png'
 const OurLeader = () => {
     return (
         <section style={{ background: "#f8f9fa" }} className="py-2">
-            <div className="container mt-5">
+            <div className="container py-5">
                 <h1 className="line-red">Our Business Transformation   Consulting Leaders</h1>
                 <div className="row">
                     <div className="col-xl-6">
@@ -28,7 +28,7 @@ const OurLeader = () => {
                         <p className="text-style-leader">
                             Venkatesh is a Founder of tryScrum.com, a Management Consulting firm. He is also a Professional Scrum Trainer® with Scrum.org, a Certified Enterprise Coach® with Scrum
                         </p>
-                        <p className="text-style-leader">
+                        <p className="text-style-visit-profile">
                             <button className='leader-button'>
                                 <a>VISIT PROFILE</a>
                             </button>
@@ -52,7 +52,7 @@ const OurLeader = () => {
                         <p className="text-style-leader">
                             Arunvignesh is a Professional Agile trainer in tryScrum.com. He is a Professional Scrum Trainer® wit Scrum.org, Certified Team Coach® (CTC) with Scrum Alliance, and ICAgile Authorized Instructor.
                         </p>
-                        <p className="text-style-leader">
+                        <p className="text-style-visit-profile">
                             <button className='leader-button'>
                                 <a>VISIT PROFILE</a>
                             </button>

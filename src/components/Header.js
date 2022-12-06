@@ -4,6 +4,8 @@ import AboutTwo from './OurMission'
 import Navbar from './Navbar'
 import Capabilities from './Capabilities'
 import OurLeader from './OurLeader'
+import StoryTree from './StoryTree'
+import Footer from './Footer'
 
 
 const Header = () => {
@@ -14,6 +16,8 @@ const Header = () => {
             <AboutTwo />  
             <Capabilities /> 
             <OurLeader />
+            <StoryTree />
+            <Footer />
         </div>
     )
 }

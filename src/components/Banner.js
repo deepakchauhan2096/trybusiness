@@ -1,23 +1,34 @@
-import React from 'react'
-import homebanner from '../assets/images/banner-bg.png'
+import React, { useEffect } from 'react'
+import homebanner from '../assets/images/banner3.jpg'
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const Banner = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 90000 });
+    }, [])
+
+
     return (
         <section>
-            <div className="banner">
+            <div className='banner'>
                 <img src={homebanner} alt="trybusiness banner" />
-                <div className="banner-text">
-                    <span>
-                        We help
-                    </span>
-                    <br/>
-                    <span>
-                        next-generation organisations
-                    </span>
-                    <br/>
-                    <span >
-                      to stay capable and resilient
-                    </span>
+                <div className='text-contain'>
+                    <div className="div" data-aos="fade-down">
+                        <span >
+                            We help Next-generation
+                        </span>
+                        <span>
+                            Organisations
+                        </span>
+                        <span>
+                            To stay
+                        </span>
+                        <span>
+                            Capable and resilient
+                        </span>
+                    </div>
                 </div>
             </div>
         </section>

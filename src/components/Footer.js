@@ -92,7 +92,7 @@ const Footer = () => {
                                     <div className="p-3">
                                         © 2020 Copyright:
                                         <a className="text-white" href="https://mdbootstrap.com/"
-                                        > Trybusiness.com</a
+                                        > trybusiness.com</a
                                         >
                                     </div>
 
@@ -101,24 +101,24 @@ const Footer = () => {
                                 <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
 
                                     <a
-                                        className="btn btn-outline-light btn-floating m-1 text-white"
+                                        className="btn btn-outline-light btn-floating m-1 text-white footer_icon"
                                         role="button"
                                     ><i className="fa fa-facebook-f"></i
                                     ></a>
 
                                     <a
-                                        className="btn btn-outline-light btn-floating m-1 text-white"
+                                        className="btn btn-outline-light btn-floating m-1 text-white footer_icon"
                                         role="button"
                                     ><i className="fa fa-twitter"></i
                                     ></a>
 
                                     <a
-                                        className="btn btn-outline-light btn-floating m-1 text-white"
+                                        className="btn btn-outline-light btn-floating m-1 text-white footer_icon"
                                         role="button"
                                     ><i className="fa fa-google"></i
                                     ></a>
                                     <a
-                                        className="btn btn-outline-light btn-floating m-1 text-white"
+                                        className="btn btn-outline-light btn-floating m-1 text-white footer_icon"
                                         role="button"
                                     ><i className="fa fa-instagram"></i
                                     ></a>

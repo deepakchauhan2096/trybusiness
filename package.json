@@ -1,12 +1,12 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "trybusiness",
   "private": true,
   "description": "A simplified bare-bones starter for Gatsby",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop --host $(ifconfig | awk '/inet 192\\.168\\.[0-9]+\\.[0-9]+/{print $2}') --port 8000",
+    "develop": "gatsby develop",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/gatsbyjs/trybusiness"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"

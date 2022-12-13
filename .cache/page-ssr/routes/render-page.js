@@ -4771,7 +4771,7 @@ function getForwards(collectedScripts) {
 /***/ 5418:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-exports.components={"component---src-pages-index-js":()=>__webpack_require__.e(/* import() | component---src-pages-index-js */ 678).then(__webpack_require__.bind(__webpack_require__, 4569))};
+exports.components={"component---src-pages-index-js":()=>__webpack_require__.e(/* import() | component---src-pages-index-js */ 678).then(__webpack_require__.bind(__webpack_require__, 4897))};
 
 /***/ }),
 

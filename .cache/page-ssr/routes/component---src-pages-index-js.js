@@ -21,7 +21,7 @@ var __assign=undefined&&undefined.__assign||function(){return(__assign=Object.as
 
 /***/ }),
 
-/***/ 4569:
+/***/ 4897:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -38,31 +38,343 @@ var external_C_trybusiness_trybusiness_node_modules_react_index_js_ = __webpack_
 var external_C_trybusiness_trybusiness_node_modules_react_index_js_default = /*#__PURE__*/__webpack_require__.n(external_C_trybusiness_trybusiness_node_modules_react_index_js_);
 ;// CONCATENATED MODULE: ./src/assets/images/banner3.jpg
 /* harmony default export */ const banner3 = (__webpack_require__.p + "static/banner3-6953dcea0658b6a4c7fa0c9005dee411.jpg");
+// EXTERNAL MODULE: ./node_modules/prop-types/index.js
+var prop_types = __webpack_require__(5697);
+var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
+// EXTERNAL MODULE: ./node_modules/react-dom/index.js
+var react_dom = __webpack_require__(3935);
+// EXTERNAL MODULE: ./node_modules/lodash.throttle/index.js
+var lodash_throttle = __webpack_require__(3096);
+var lodash_throttle_default = /*#__PURE__*/__webpack_require__.n(lodash_throttle);
+;// CONCATENATED MODULE: ./node_modules/clean-react-props/es/constants.js
+var HTMLProps = ['accept', 'acceptCharset', 'accessKey', 'action', 'allowFullScreen', 'allowTransparency', // ?
+'alt', 'async', 'autoComplete', 'autoFocus', 'autoPlay', 'capture', 'cellPadding', 'cellSpacing', 'challenge', 'charSet', 'checked', 'cite', 'classID', 'className', 'colSpan', 'cols', 'content', 'contentEditable', 'contextMenu', 'controls', 'controlsList', 'coords', 'crossOrigin', 'data', 'dateTime', 'default', 'defer', 'dir', 'disabled', 'download', 'draggable', 'encType', 'form', 'formAction', 'formEncType', 'formMethod', 'formNoValidate', 'formTarget', 'frameBorder', 'headers', 'height', 'hidden', 'high', 'href', 'hrefLang', 'htmlFor', 'httpEquiv', 'icon', 'id', 'inputMode', 'integrity', 'is', 'keyParams', 'keyType', 'kind', 'label', 'lang', 'list', 'loop', 'low', 'manifest', 'marginHeight', 'marginWidth', 'max', 'maxLength', 'media', 'mediaGroup', 'method', 'min', 'minLength', 'multiple', 'muted', 'name', 'noValidate', 'nonce', 'open', 'optimum', 'pattern', 'placeholder', 'poster', 'preload', 'profile', 'radioGroup', 'readOnly', 'rel', 'required', 'reversed', 'role', 'rowSpan', 'rows', 'sandbox', 'scope', 'scoped', 'scrolling', 'seamless', 'selected', 'shape', 'size', 'sizes', 'span', 'spellCheck', 'src', 'srcDoc', 'srcLang', 'srcSet', 'start', 'step', 'style', 'summary', 'tabIndex', 'target', 'title', 'type', 'useMap', 'value', 'width', 'wmode', 'wrap'];
+var RDFProps = ['about', 'datatype', 'inlist', 'prefix', 'property', 'resource', 'typeof', 'vocab'];
+var constants_SVGProps = (/* unused pure expression or super */ null && (['accentHeight', 'accumulate', 'additive', 'alignmentBaseline', 'allowReorder', 'alphabetic', 'amplitude', 'arabicForm', 'ascent', 'attributeName', 'attributeType', 'autoReverse', 'azimuth', 'baseFrequency', 'baseProfile', 'baselineShift', 'bbox', 'begin', 'bias', 'by', 'calcMode', 'capHeight', 'clip', 'clipPath', 'clipPathUnits', 'clipRule', 'colorInterpolation', 'colorInterpolationFilters', 'colorProfile', 'colorRendering', 'contentScriptType', 'contentStyleType', 'cursor', 'cx', 'cy', 'd', 'decelerate', 'descent', 'diffuseConstant', 'direction', 'display', 'divisor', 'dominantBaseline', 'dur', 'dx', 'dy', 'edgeMode', 'elevation', 'enableBackground', 'end', 'exponent', 'externalResourcesRequired', 'fill', 'fillOpacity', 'fillRule', 'filter', 'filterRes', 'filterUnits', 'floodColor', 'floodOpacity', 'focusable', 'fontFamily', 'fontSize', 'fontSizeAdjust', 'fontStretch', 'fontStyle', 'fontVariant', 'fontWeight', 'format', 'from', 'fx', 'fy', 'g1', 'g2', 'glyphName', 'glyphOrientationHorizontal', 'glyphOrientationVertical', 'glyphRef', 'gradientTransform', 'gradientUnits', 'hanging', 'horizAdvX', 'horizOriginX', 'ideographic', 'imageRendering', 'in', 'in2', 'intercept', 'k', 'k1', 'k2', 'k3', 'k4', 'kernelMatrix', 'kernelUnitLength', 'kerning', 'keyPoints', 'keySplines', 'keyTimes', 'lengthAdjust', 'letterSpacing', 'lightingColor', 'limitingConeAngle', 'local', 'markerEnd', 'markerHeight', 'markerMid', 'markerStart', 'markerUnits', 'markerWidth', 'mask', 'maskContentUnits', 'maskUnits', 'mathematical', 'mode', 'numOctaves', 'offset', 'opacity', 'operator', 'order', 'orient', 'orientation', 'origin', 'overflow', 'overlinePosition', 'overlineThickness', 'paintOrder', 'panose1', 'pathLength', 'patternContentUnits', 'patternTransform', 'patternUnits', 'pointerEvents', 'points', 'pointsAtX', 'pointsAtY', 'pointsAtZ', 'preserveAlpha', 'preserveAspectRatio', 'primitiveUnits', 'r', 'radius', 'refX', 'refY', 'renderingIntent', 'repeatCount', 'repeatDur', 'requiredExtensions', 'requiredFeatures', 'restart', 'result', 'rotate', 'rx', 'ry', 'scale', 'seed', 'shapeRendering', 'slope', 'spacing', 'specularConstant', 'specularExponent', 'speed', 'spreadMethod', 'startOffset', 'stdDeviation', 'stemh', 'stemv', 'stitchTiles', 'stopColor', 'stopOpacity', 'strikethroughPosition', 'strikethroughThickness', 'string', 'stroke', 'strokeDasharray', 'strokeDashoffset', 'strokeLinecap', 'strokeLinejoin', 'strokeMiterlimit', 'strokeOpacity', 'strokeWidth', 'surfaceScale', 'systemLanguage', 'tableValues', 'targetX', 'targetY', 'textAnchor', 'textDecoration', 'textLength', 'textRendering', 'to', 'transform', 'u1', 'u2', 'underlinePosition', 'underlineThickness', 'unicode', 'unicodeBidi', 'unicodeRange', 'unitsPerEm', 'vAlphabetic', 'vHanging', 'vIdeographic', 'vMathematical', 'values', 'vectorEffect', 'version', 'vertAdvY', 'vertOriginX', 'vertOriginY', 'viewBox', 'viewTarget', 'visibility', 'widths', 'wordSpacing', 'writingMode', 'x', 'x1', 'x2', 'xChannelSelector', 'xHeight', 'xlinkActuate', 'xlinkArcrole', 'xlinkHref', 'xlinkRole', 'xlinkShow', 'xlinkTitle', 'xlinkType', 'xmlns', 'xmlnsXlink', 'xmlBase', 'xmlLang', 'xmlSpace', 'y', 'y1', 'y2', 'yChannelSelector', 'z', 'zoomAndPan']));
+var ValidEvents = [// Clipboard Events
+'onCopy', 'onCut', 'onPaste', // Composition Events
+'onCompositionEnd', 'onCompositionStart', 'onCompositionUpdate', // Keyboard Events
+'onKeyDown', 'onKeyPress', 'onKeyUp', // Focus Events
+'onFocus', 'onBlur', // Form Events
+'onChange', 'onInput', 'onInvalid', 'onReset', 'onSubmit', // Mouse Events
+'onClick', 'onContextMenu', 'onDoubleClick', 'onDrag', 'onDragEnd', 'onDragEnter', 'onDragExit', 'onDragLeave', 'onDragOver', 'onDragStart', 'onDrop', 'onMouseDown', 'onMouseEnter', 'onMouseLeave', 'onMouseMove', 'onMouseOut', 'onMouseOver', 'onMouseUp', // Pointer Events
+'onPointerDown', 'onPointerMove', 'onPointerUp', 'onPointerCancel', 'onGotPointerCapture', 'onLostPointerCapture', 'onPointerEnter', 'onPointerLeave', 'onPointerOver', 'onPointerOut', // Selection Events
+'onSelect', // Touch Events
+'onTouchCancel', 'onTouchEnd', 'onTouchMove', 'onTouchStart', // UI Events
+'onScroll', // Wheel Events
+'onWheel', // Media Events
+'onAbort', 'onCanPlay', 'onCanPlayThrough', 'onDurationChange', 'onEmptied', 'onEncrypted', 'onEnded', 'onError', 'onLoadedData', 'onLoadedMetadata', 'onLoadStart', 'onPause', 'onPlay', 'onPlaying', 'onProgress', 'onRateChange', 'onSeeked', 'onSeeking', 'onStalled', 'onSuspend', 'onTimeUpdate', 'onVolumeChange', 'onWaiting', // Image Events
+'onLoad', 'onError', // Animation Events
+'onAnimationStart', 'onAnimationEnd', 'onAnimationIteration', // Transition Events
+'onTransitionEnd', // Other Events
+'onToggle'];
+;// CONCATENATED MODULE: ./node_modules/clean-react-props/es/index.js
+
+var DataRegex = /data-([a-zA-Z0-9\-]*)/;
+var AriaRegex = /aria-([a-zA-Z0-9\-]*)/;
+/**
+ * Return an object containing the valid props to apply to an HTMLElement.
+ *
+ * @param {Object} props - Props to be filtered and applied to DOM element.
+ * @param {Array} excludes - Array of props to exlude
+ * @param {Array} customAttributes - Array of custom attributes to include
+ * @return {Object}
+ */
+
+var cleanProps = function cleanProps(props, excludes, customAttributes) {
+  if (props === void 0) {
+    props = {};
+  }
+
+  if (excludes === void 0) {
+    excludes = [];
+  }
+
+  if (customAttributes === void 0) {
+    customAttributes = [];
+  }
+
+  var returnProps = Object.assign({}, props);
+  var validProps = Object.keys(returnProps).filter(function (key) {
+    if (excludes.indexOf(key) !== -1) {
+      return false;
+    }
+
+    if (customAttributes.indexOf(key) > -1) {
+      return true;
+    }
+
+    if (HTMLProps.indexOf(key) !== -1) {
+      return true;
+    }
+
+    if (RDFProps.indexOf(key) !== -1) {
+      return true;
+    }
+
+    if (DataRegex.test(key)) {
+      return true;
+    }
+
+    if (AriaRegex.test(key)) {
+      return true;
+    }
+
+    if (ValidEvents.indexOf(key) !== -1) {
+      return true;
+    }
+
+    return false;
+  });
+  Object.keys(returnProps).forEach(function (key) {
+    if (validProps.indexOf(key) === -1) {
+      delete returnProps[key];
+    }
+  });
+  return returnProps;
+};
+/**
+ * Return an object containing the valid props to apply to an SVGElement.
+ *
+ * @param {Object} props
+ * @param {Object}
+ */
+
+
+var cleanSVGProps = function cleanSVGProps(props, excludes) {
+  if (props === void 0) {
+    props = {};
+  }
+
+  if (excludes === void 0) {
+    excludes = [];
+  }
+
+  var returnProps = Object.assign({}, props);
+  var validProps = Object.keys(returnProps).filter(function (key) {
+    if (excludes.indexOf(key) !== -1) {
+      return false;
+    }
+
+    if (SVGProps.indexOf(key) !== -1) {
+      return true;
+    }
+
+    return false;
+  });
+  Object.keys(returnProps).forEach(function (key) {
+    if (validProps.indexOf(key) === -1) {
+      delete returnProps[key];
+    }
+  });
+  return returnProps;
+}; // Exports ___________________________________________________________________
+
+
+/* harmony default export */ const es = (cleanProps);
+;// CONCATENATED MODULE: ./node_modules/react-scroll-trigger/es/index.js
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+
+var ScrollTrigger = /*#__PURE__*/function (_Component) {
+  _inheritsLoose(ScrollTrigger, _Component);
+
+  function ScrollTrigger(props) {
+    var _this;
+
+    _this = _Component.call(this, props) || this;
+    _this.onScrollThrottled = lodash_throttle_default()(_this.onScroll.bind(_assertThisInitialized(_this)), props.throttleScroll, {
+      trailing: false
+    });
+    _this.onResizeThrottled = lodash_throttle_default()(_this.onResize.bind(_assertThisInitialized(_this)), props.throttleResize, {
+      trailing: false
+    });
+    _this.state = {
+      inViewport: false,
+      progress: 0,
+      lastScrollPosition: null,
+      lastScrollTime: null
+    };
+    return _this;
+  }
+
+  var _proto = ScrollTrigger.prototype;
+
+  _proto.componentDidMount = function componentDidMount() {
+    addEventListener('resize', this.onResizeThrottled);
+    addEventListener('scroll', this.onScrollThrottled);
+
+    if (this.props.triggerOnLoad) {
+      this.checkStatus();
+    }
+  };
+
+  _proto.componentDidUpdate = function componentDidUpdate(prevProps, prevState) {
+    if (prevProps.throttleScroll !== this.props.throttleScroll) {
+      removeEventListener('scroll', this.onScrollThrottled);
+      this.onScrollThrottled = lodash_throttle_default()(this.onScroll.bind(this), this.props.throttleScroll, {
+        trailing: false
+      });
+      addEventListener('scroll', this.onScrollThrottled);
+    }
+
+    if (prevProps.throttleResize !== this.props.throttleResize) {
+      removeEventListener('resize', this.onResizeThrottled);
+      this.onResizeThrottled = lodash_throttle_default()(this.onResize.bind(this), this.props.throttleResize, {
+        trailing: false
+      });
+      addEventListener('resize', this.onResizeThrottled);
+    }
+  };
+
+  _proto.componentWillUnmount = function componentWillUnmount() {
+    removeEventListener('resize', this.onResizeThrottled);
+    removeEventListener('scroll', this.onScrollThrottled);
+  };
+
+  _proto.onResize = function onResize() {
+    this.checkStatus();
+  };
+
+  _proto.onScroll = function onScroll() {
+    this.checkStatus();
+  };
+
+  _proto.checkStatus = function checkStatus() {
+    var _this$props = this.props,
+        containerRef = _this$props.containerRef,
+        onEnter = _this$props.onEnter,
+        onExit = _this$props.onExit,
+        onProgress = _this$props.onProgress;
+    var _this$state = this.state,
+        lastScrollPosition = _this$state.lastScrollPosition,
+        lastScrollTime = _this$state.lastScrollTime;
+    var element = react_dom.findDOMNode(this.element);
+    var elementRect = element.getBoundingClientRect();
+    var viewportStart = 0;
+    var scrollingElement = typeof containerRef === 'string' ? document.querySelector(containerRef) : containerRef;
+    var viewportEnd = containerRef === document.documentElement ? Math.max(containerRef.clientHeight, window.innerHeight || 0) : scrollingElement.clientHeight;
+    var inViewport = elementRect.top <= viewportEnd && elementRect.bottom >= viewportStart;
+    var position = window.scrollY;
+    var velocity = lastScrollPosition && lastScrollTime ? Math.abs((lastScrollPosition - position) / (lastScrollTime - Date.now())) : null;
+
+    if (inViewport) {
+      var progress = Math.max(0, Math.min(1, 1 - elementRect.bottom / (viewportEnd + elementRect.height)));
+
+      if (!this.state.inViewport) {
+        this.setState({
+          inViewport: inViewport
+        });
+        onEnter({
+          progress: progress,
+          velocity: velocity
+        }, this);
+      }
+
+      onProgress({
+        progress: progress,
+        velocity: velocity
+      }, this);
+      this.setState({
+        lastScrollPosition: position,
+        lastScrollTime: Date.now()
+      });
+      return;
+    }
+
+    if (this.state.inViewport) {
+      var _progress = elementRect.top <= viewportEnd ? 1 : 0;
+
+      this.setState({
+        lastScrollPosition: position,
+        lastScrollTime: Date.now(),
+        inViewport: inViewport,
+        progress: _progress
+      });
+      onProgress({
+        progress: _progress,
+        velocity: velocity
+      }, this);
+      onExit({
+        progress: _progress,
+        velocity: velocity
+      }, this);
+    }
+  };
+
+  _proto.render = function render() {
+    var _this2 = this;
+
+    var _this$props2 = this.props,
+        children = _this$props2.children,
+        component = _this$props2.component;
+    var elementMethod = /*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().isValidElement(component) ? 'cloneElement' : 'createElement';
+    return (external_C_trybusiness_trybusiness_node_modules_react_index_js_default())[elementMethod](component, _objectSpread(_objectSpread({}, es(this.props, ['onProgress'])), {}, {
+      ref: function ref(element) {
+        _this2.element = element;
+      }
+    }), children);
+  };
+
+  return ScrollTrigger;
+}(external_C_trybusiness_trybusiness_node_modules_react_index_js_.Component);
+
+ScrollTrigger.propTypes = {
+  component: prop_types_default().oneOfType([(prop_types_default()).element, (prop_types_default()).node]),
+  containerRef: prop_types_default().oneOfType([(prop_types_default()).object, (prop_types_default()).string]),
+  throttleResize: (prop_types_default()).number,
+  throttleScroll: (prop_types_default()).number,
+  triggerOnLoad: (prop_types_default()).bool,
+  onEnter: (prop_types_default()).func,
+  onExit: (prop_types_default()).func,
+  onProgress: (prop_types_default()).func
+};
+ScrollTrigger.defaultProps = {
+  component: 'div',
+  containerRef: typeof document !== 'undefined' ? document.documentElement : 'html',
+  throttleResize: 100,
+  throttleScroll: 100,
+  triggerOnLoad: true,
+  onEnter: function onEnter() {},
+  onExit: function onExit() {},
+  onProgress: function onProgress() {}
+};
+/* harmony default export */ const react_scroll_trigger_es = (ScrollTrigger);
 // EXTERNAL MODULE: ./node_modules/aos/dist/aos.js
 var aos = __webpack_require__(2711);
 var aos_default = /*#__PURE__*/__webpack_require__.n(aos);
 ;// CONCATENATED MODULE: ./src/components/Banner.js
-const Banner=()=>{(0,external_C_trybusiness_trybusiness_node_modules_react_index_js_.useEffect)(()=>{aos_default().init({duration:90000});},[]);return/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("section",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"banner"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:banner3,alt:"trybusiness banner"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"text-contain"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"div","data-aos":"fade-down"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("span",null,"We help Next-generation"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("span",null,"Organisations"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("span",null,"To stay"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("span",null,"Capable and resilient")))));};/* harmony default export */ const components_Banner = (Banner);
-// EXTERNAL MODULE: ./node_modules/react-countup/build/index.js
-var build = __webpack_require__(7857);
-// EXTERNAL MODULE: ./node_modules/react-visibility-sensor/dist/visibility-sensor.js
-var visibility_sensor = __webpack_require__(3082);
-var visibility_sensor_default = /*#__PURE__*/__webpack_require__.n(visibility_sensor);
+const Banner=()=>{(0,external_C_trybusiness_trybusiness_node_modules_react_index_js_.useEffect)(()=>{aos_default().init({duration:90000});},[]);const{0:Counter,1:setCounter}=(0,external_C_trybusiness_trybusiness_node_modules_react_index_js_.useState)();return/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("section",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"banner"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:banner3,alt:"trybusiness banner"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"text-contain"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(react_scroll_trigger_es,{onEnter:()=>setCounter(true),onExit:()=>setCounter(false)},Counter&&/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{"data-aos":"fade-down"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("span",null,"We help the Next Generation"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("span",null,"Organisations to stay Capable and"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("span",null,"Resilient"))))));};/* harmony default export */ const components_Banner = (Banner);
 ;// CONCATENATED MODULE: ./src/assets/images/group-people.png
 /* harmony default export */ const group_people = (__webpack_require__.p + "static/group-people-f81eb7dc6587aba44513a28a5aba6d80.png");
-;// CONCATENATED MODULE: ./src/assets/images/symbol-trybusinessagility-logo.png
-/* harmony default export */ const symbol_trybusinessagility_logo = (__webpack_require__.p + "static/symbol-trybusinessagility-logo-b4e2c1e262c68e51933ac2c84d9aa3c8.png");
+// EXTERNAL MODULE: ./node_modules/react-countup/build/index.js
+var build = __webpack_require__(7857);
 // EXTERNAL MODULE: ./.cache/gatsby-browser-entry.js + 11 modules
 var gatsby_browser_entry = __webpack_require__(7076);
 ;// CONCATENATED MODULE: ./src/components/OurMission.js
-const AboutTwo=()=>{const{0:startCounter,1:setCounter}=(0,external_C_trybusiness_trybusiness_node_modules_react_index_js_.useState)(50);(0,external_C_trybusiness_trybusiness_node_modules_react_index_js_.useEffect)(()=>{aos_default().init({duration:1000,offset:100,delay:200});},[]);// console.log(this.state.startCounter);
-return/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("section",{style:{background:"#f8f9fa",height:"auto"}},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"container mission-container"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"row"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-6 col-xl-5"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"about-content"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h1",{className:"line-green","data-aos":"fade-right"},"OUR MISSION"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{className:"paragraph paragraph-mobile","data-aos":"fade-up"},"Our mission is to discover, preserve and distribute knowledge and capabilities to enable the next generation of organisations to be capable and resilient."),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/about/",className:"btn btn-danger"},"Learn More"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-6 col-xl-5 position-relative",style:{}},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"our_mission"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:group_people,alt:"about",className:"image_one"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("span",{className:"text"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",null,"Trusted by"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement((visibility_sensor_default()),{offset:{top:10},delayedCall:true},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("strong",{style:{display:"flex",flexDirection:"row"}},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(build/* default */.ZP,{end:startCounter?50:0}),"+")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",null,"Organisations")))))));};/* harmony default export */ const OurMission = (AboutTwo);
+const AboutTwo=()=>{const{0:Counter,1:setCounter}=(0,external_C_trybusiness_trybusiness_node_modules_react_index_js_.useState)();(0,external_C_trybusiness_trybusiness_node_modules_react_index_js_.useEffect)(()=>{aos_default().init({duration:1000,offset:100,delay:200});},[]);// console.log(this.state.startCounter);
+return/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("section",{style:{background:"#f8f9fa",height:"auto"}},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"container mission-container"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"row"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-6 col-xl-5"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"about-content"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h1",{className:"line-green","data-aos":"fade-up"},"OUR MISSION"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{className:"paragraph paragraph-mobile","data-aos":"fade-up"},"Our mission is to discover, preserve and distribute knowledge and capabilities to enable the next generation of organisations to be capable and resilient."),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(gatsby_browser_entry.Link,{to:"/about/",className:"try-btn"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"button_slide slide_down"},"Learn More")))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-6 col-xl-5 position-relative",style:{}},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"our_mission"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:group_people,alt:"about",className:"image_one"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("span",{className:"text"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",null,"Trusted by"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(react_scroll_trigger_es,{onEnter:()=>setCounter(true),onExit:()=>setCounter(false)},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("strong",{style:{display:"flex",flexDirection:"row"}},Counter&&/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(build/* default */.ZP,{start:0,end:50,duration:2,delay:0}),"+")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",null,"Organisations")))))));};/* harmony default export */ const OurMission = (AboutTwo);
 // EXTERNAL MODULE: ./node_modules/react-helmet/es/Helmet.js
 var Helmet = __webpack_require__(4593);
-;// CONCATENATED MODULE: ./src/assets/images/trybusinessagility.png
-/* harmony default export */ const trybusinessagility = ("data:image/png;base64,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");
+;// CONCATENATED MODULE: ./src/assets/images/web-logo.png
+/* harmony default export */ const web_logo = ("data:image/png;base64,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");
 ;// CONCATENATED MODULE: ./src/components/Navbar.js
-const Navbar=()=>{return/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(Helmet.Helmet,null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("link",{href:"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css",rel:"stylesheet",integrity:"sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65",crossorigin:"anonymous"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("script",{src:"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js",integrity:"sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4",crossorigin:"anonymous"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("link",{rel:"stylesheet",href:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"})),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("nav",{className:"navbar navbar-expand-lg navbar-light bg-light"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"container",id:"footer"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"navbar-brand",href:"#",alt:"trybusiness"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:trybusinessagility,className:"logo-trybusiness"})),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("button",{className:"navbar-toggler",type:"button","data-toggle":"collapse","data-target":"#navbarNav","aria-controls":"navbarNav","aria-expanded":"false","aria-label":"Toggle navigation"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("span",{className:"navbar-toggler-icon"})),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"collapse navbar-collapse",id:"navbarNav"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("ul",{className:"navbar-nav"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("li",{className:"nav-item active"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"nav-link",href:"#"},"Home")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("li",{className:"nav-item"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"nav-link",href:"#"},"Features")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("li",{className:"nav-item"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"nav-link",href:"#"},"Pricing")))))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"strips-container"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"strip-green"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"strip-red"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"strip-yellow"})));};/* harmony default export */ const components_Navbar = (Navbar);
+const Navbar=()=>{return/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(Helmet.Helmet,null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("link",{href:"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css",rel:"stylesheet",integrity:"sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65",crossorigin:"anonymous"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("script",{src:"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js",integrity:"sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4",crossorigin:"anonymous"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("link",{rel:"stylesheet",href:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"})),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("nav",{className:"navbar navbar-expand-lg navbar-light bg-light"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"container",id:"footer"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"navbar-brand",href:"#",alt:"trybusiness"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:web_logo,className:"logo-trybusiness"})),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("button",{className:"navbar-toggler",type:"button","data-toggle":"collapse","data-target":"#navbarNav","aria-controls":"navbarNav","aria-expanded":"false","aria-label":"Toggle navigation"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("span",{className:"navbar-toggler-icon"})),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"collapse navbar-collapse",id:"navbarNav"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("ul",{className:"navbar-nav"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("li",{className:"nav-item active"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"nav-link",href:"/"},"Home")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("li",{className:"nav-item"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"nav-link",href:"#"},"Contact Us")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("li",{className:"nav-item"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"nav-link",href:"#"},"About")))))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"strips-container"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"strip-green"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"strip-red"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"strip-yellow"})));};/* harmony default export */ const components_Navbar = (Navbar);
 ;// CONCATENATED MODULE: ./src/assets/images/leadership.png
 /* harmony default export */ const leadership = (__webpack_require__.p + "static/leadership-167255a555ab50331f8a9738c06d30b4.png");
 ;// CONCATENATED MODULE: ./src/assets/images/customer-satisfaction.png
@@ -76,7 +388,7 @@ const Navbar=()=>{return/*#__PURE__*/external_C_trybusiness_trybusiness_node_mod
 ;// CONCATENATED MODULE: ./src/assets/images/business-coaching.png
 /* harmony default export */ const business_coaching = (__webpack_require__.p + "static/business-coaching-c18b403d2aa318a269fc7539cd5b245f.png");
 ;// CONCATENATED MODULE: ./src/components/Capabilities.js
-const Capabilities=()=>{(0,external_C_trybusiness_trybusiness_node_modules_react_index_js_.useEffect)(()=>{aos_default().init({duration:3000});},[]);return/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("section",{className:"py-2"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"container my-5"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h1",{className:"line-yellow"},"OUR CAPABILITIES"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"row"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-6 col-xl-4 py-5"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"paragraph capabilities-style paragraph-cap-mobile","data-aos":"fade-left"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:leadership,className:"icons-capabilties"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Leadership Coaching"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-6 col-xl-4 py-5 "},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"paragraph capabilities-style paragraph-cap-mobile","data-aos":"fade-left"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:customer_satisfaction,className:"icons-capabilties"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Customer Experience"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-6 col-xl-4 py-5"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"paragraph capabilities-style paragraph-cap-mobile","data-aos":"fade-left"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:digital_strategy,className:"icons-capabilties"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Digital Strategy"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-6 col-xl-4 py-5"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"paragraph capabilities-style paragraph-cap-mobile","data-aos":"fade-left"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:agile_transformation,className:"icons-capabilties"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Agile Transformation"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-6 col-xl-4 py-5"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"paragraph capabilities-style paragraph-cap-mobile","data-aos":"fade-left"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:taster,className:"icons-capabilties"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Taster Consulting"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-6 col-xl-4 py-5"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"paragraph capabilities-style paragraph-cap-mobile","data-aos":"fade-left"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:business_coaching,className:"icons-capabilties"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Business Coaching"))))));};/* harmony default export */ const components_Capabilities = (Capabilities);
+const Capabilities=()=>{(0,external_C_trybusiness_trybusiness_node_modules_react_index_js_.useEffect)(()=>{aos_default().init({duration:3000});},[]);return/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("section",{className:"py-2"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"container my-5"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h1",{className:"line-yellow","data-aos":"fade-up"},"OUR CAPABILITIES"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"row"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-6 col-xl-4 py-5"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"paragraph capabilities-style paragraph-cap-mobile","data-aos":"fade-left"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:leadership,className:"icons-capabilties"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Leadership"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Coaching"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-6 col-xl-4 py-5 "},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"paragraph capabilities-style paragraph-cap-mobile","data-aos":"fade-left"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:customer_satisfaction,className:"icons-capabilties"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Customer"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Experience"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-6 col-xl-4 py-5"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"paragraph capabilities-style paragraph-cap-mobile","data-aos":"fade-left"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:digital_strategy,className:"icons-capabilties"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Digital"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Strategy"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-6 col-xl-4 py-5"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"paragraph capabilities-style paragraph-cap-mobile","data-aos":"fade-left"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:agile_transformation,className:"icons-capabilties"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Agile"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Transformation"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-6 col-xl-4 py-5"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"paragraph capabilities-style paragraph-cap-mobile","data-aos":"fade-left"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:taster,className:"icons-capabilties"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Taster"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Consulting"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-6 col-xl-4 py-5"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"paragraph capabilities-style paragraph-cap-mobile","data-aos":"fade-left"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:business_coaching,className:"icons-capabilties"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Business"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Coaching"))))));};/* harmony default export */ const components_Capabilities = (Capabilities);
 ;// CONCATENATED MODULE: ./src/assets/svg/venkatesh.png
 /* harmony default export */ const venkatesh = (__webpack_require__.p + "static/venkatesh-28541c65e7af18862953513c2030a38c.png");
 ;// CONCATENATED MODULE: ./src/components/Leaders.js
@@ -94,18 +406,464 @@ const LeaderLeft=props=>{(0,external_C_trybusiness_trybusiness_node_modules_reac
 ;// CONCATENATED MODULE: ./src/assets/social/linkedin.png
 /* harmony default export */ const linkedin = ("data:image/png;base64,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");
 ;// CONCATENATED MODULE: ./src/components/OurLeader.js
-const OurLeader=()=>{(0,external_C_trybusiness_trybusiness_node_modules_react_index_js_.useEffect)(()=>{aos_default().init({duration:2000});},[]);return/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("section",{style:{background:"#f8f9fa"},className:"py-2"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"container py-5"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h1",{className:"line-red"},"Our Business Transformation Consulting Leaders"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"row py-4"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-xl-6"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{className:"paragraph capabilities-style"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(Leaders,{Image:venkatesh,Name:"Venkatesh Rajamani",Caption:"Founder & Trainer",Twitter:"https://twitter.com/arunronline",Linkedin:"https://www.linkedin.com/in/arunvignesh-ramakrishnan/",Slack:"https://tryscrum-community.slack.com",Meetup:"https://www.meetup.com/smstudiochn/",bg:"rgb(240, 84, 87)"}))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-xl-6 position-relative"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{className:"paragraph-visit-profile"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{className:"text-style-leader","data-aos":"fade-left"},"Arunvignesh is a Professional Agile trainer in tryScrum.com. He is a Professional Scrum Trainer\xAE wit Scrum.org, Certified Team Coach\xAE (CTC) with Scrum Alliance, and ICAgile Authorized\xA0Instructor."),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{className:"text-style-visit-profile"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("button",{className:"leader-button"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",null,"VISIT PROFILE"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"all_link"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{href:"",target:"_blank",className:"link_one"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa twitter"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:twitter}))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{href:"",target:"_blank",className:"link_two"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa linkedin"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:linkedin}))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{href:"",target:"_blank",className:"link_three"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa slack"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:slack}))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{href:"",target:"_blank",className:"link_four"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa meetup"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:meetup}))))))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"row leader_flex py-4"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-xl-6 position-relative"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{className:"paragraph-visit-profile"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{className:"text-style-leader","data-aos":"fade-right"},"Arunvignesh is a Professional Agile trainer in tryScrum.com. He is a Professional Scrum Trainer\xAE wit Scrum.org, Certified Team Coach\xAE (CTC) with Scrum Alliance, and ICAgile Authorized\xA0Instructor."),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{className:"text-style-visit-profile"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("button",{className:"leader-button"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",null,"VISIT PROFILE"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"all_link"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{href:"",target:"_blank",className:"link_one"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa twitter"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:twitter}))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{href:"",target:"_blank",className:"link_two"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa linkedin"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:linkedin}))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{href:"",target:"_blank",className:"link_three"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa slack"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:slack}))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{href:"",target:"_blank",className:"link_four"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa meetup"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:meetup})))))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-xl-6"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{className:"paragraph capabilities-style"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(LeadersLeft,{Image:arun_new_1,Name:"Arunvignesh Ramakrishnan",Caption:"Agile Trainer, Coach & Consultant",Twitter:"https://twitter.com/arunronline",Linkedin:"https://www.linkedin.com/in/arunvignesh-ramakrishnan/",Slack:"https://tryscrum-community.slack.com",Meetup:"https://www.meetup.com/smstudiochn/"}))))));};/* harmony default export */ const components_OurLeader = (OurLeader);
+const OurLeader=()=>{(0,external_C_trybusiness_trybusiness_node_modules_react_index_js_.useEffect)(()=>{aos_default().init({duration:2000});},[]);return/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("section",{style:{background:"#f8f9fa"},className:"py-2"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"container py-5"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h1",{className:"line-red","data-aos":"fade-up"},"Our Business Transformation Consulting Leaders"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"row py-4"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-xl-6"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{className:"paragraph capabilities-style"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(Leaders,{Image:venkatesh,Name:"Venkatesh Rajamani",Caption:"Founder & Executive Director",Twitter:"https://twitter.com/arunronline",Linkedin:"https://www.linkedin.com/in/arunvignesh-ramakrishnan/",Slack:"https://tryscrum-community.slack.com",Meetup:"https://www.meetup.com/smstudiochn/",bg:"rgb(240, 84, 87)"}))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-xl-6 position-relative"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{className:"paragraph-visit-profile"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{className:"text-style-leader","data-aos":"fade-left"},"Venkatesh is a Founder of tryScrum.com, a Management Consulting firm. He is also a Professional Scrum Trainer\xAE with Scrum.org, a Certified Enterprise Coach\xAE\xA0with Scrum"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{className:"text-style-visit-profile"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("button",{className:"leader-button"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",null,"VISIT PROFILE"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"all_link"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{href:"https://twitter.com/AtVenk",target:"_blank",className:"link_one"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa twitter"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:twitter}))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{href:"https://www.linkedin.com/in/venkatesh-rajamani-b071b15/",target:"_blank",className:"link_two"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa linkedin"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:linkedin}))))))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"row leader_flex py-4"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-xl-6 position-relative"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{className:"paragraph-visit-profile"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{className:"text-style-leader","data-aos":"fade-right"},"Arunvignesh is a Professional Agile trainer in tryScrum.com. He is a Professional Scrum Trainer\xAE wit Scrum.org, Certified Team Coach\xAE (CTC) with Scrum Alliance, and ICAgile Authorized\xA0Instructor."),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{className:"text-style-visit-profile"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("button",{className:"leader-button"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",null,"VISIT PROFILE"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"all_link"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{href:"https://twitter.com/arunronline",target:"_blank",className:"link_one"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa twitter"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:twitter}))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{href:"https://www.linkedin.com/in/arunvignesh-ramakrishnan",target:"_blank",className:"link_two"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa linkedin"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:linkedin})))))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-xl-6"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{className:"paragraph capabilities-style"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(LeadersLeft,{Image:arun_new_1,Name:"Arunvignesh Ramakrishnan",Caption:"Agile Trainer, Coach & Consultant",Twitter:"https://twitter.com/arunronline",Linkedin:"https://www.linkedin.com/in/arunvignesh-ramakrishnan/",Slack:"https://tryscrum-community.slack.com",Meetup:"https://www.meetup.com/smstudiochn/"}))))));};/* harmony default export */ const components_OurLeader = (OurLeader);
 ;// CONCATENATED MODULE: ./src/components/StoryTree.js
-const StoryTree=()=>{return/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"container mt-5 mb-5"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"row"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-6 "},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("ul",{className:"timeline"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("li",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h3",{style:{textAlign:"left",color:"red"}},"2018"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{style:{fontSize:"20px"}},"We started with a revolutionist mindset and a mission to help the next-generation organisation by focusing on results, not reports.")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("li",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h3",{style:{textAlign:"left",color:"green"}},"2019"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{style:{fontSize:"20px"}},"tryScrum was chosen as a preferred partner by one of the Worl\u2019d most respected non-profit Organisation")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("li",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h3",{style:{textAlign:"left",color:"orange"}},"2020"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{style:{fontSize:"20px"}}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{style:{fontSize:"20px"}},"We\u2019ve worked with 50+ big and small brands around")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("li",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h3",{style:{textAlign:"left",color:"purple"}},"2021"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{style:{fontSize:"20px"}},"Ten thousand Practitioners in 24 countries representing our alumni network Trust our brand"))))));};/* harmony default export */ const components_StoryTree = (StoryTree);
-;// CONCATENATED MODULE: ./src/assets/images/trybusinessagility_footer.png
-/* harmony default export */ const trybusinessagility_footer = ("data:image/png;base64,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");
+const StoryTree=()=>{const{0:Counter,1:setCounter}=(0,external_C_trybusiness_trybusiness_node_modules_react_index_js_.useState)();return/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"container mt-5 mb-5"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"row"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-3 py-4"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h3",{className:"brand-narrative","data-aos":"flip-up"},"2018"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{style:{fontSize:"20px"}},"We started with a revolutionist mindset and a mission to help the next-generation organisation by focusing on results, not reports.")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-3 py-4"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h3",{className:"brand-narrative","data-aos":"flip-up"},"Awards"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{style:{fontSize:"20px"}},"tryScrum was chosen as a preferred partner by one of the Worl\u2019d most respected non-profit Organisation")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-3 py-4"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(react_scroll_trigger_es,{onEnter:()=>setCounter(true),onExit:()=>setCounter(false)},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h3",{className:"brand-narrative"},Counter&&/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(build/* default */.ZP,{start:0,end:50,duration:2,delay:0}),"+"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{style:{fontSize:"20px"}},"We\u2019ve worked with 50+ big and small brands around"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-3 py-4"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(react_scroll_trigger_es,{onEnter:()=>setCounter(true),onExit:()=>setCounter(false)},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h3",{className:"brand-narrative"},Counter&&/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(build/* default */.ZP,{start:0,end:24,duration:2,delay:0})),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",{style:{fontSize:"20px"}},"Ten thousand Practitioners in 24 countries representing our alumni network Trust our brand")))));};/* harmony default export */ const components_StoryTree = (StoryTree);
+;// CONCATENATED MODULE: ./src/assets/images/white-web-logo.png
+/* harmony default export */ const white_web_logo = ("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcwAAAB9CAYAAAAvOlPiAAAgAElEQVR4nO2dCZwcZZ33f9XHHJlJyEVgcgcCWVgjR1AMERYQUVjlBgGRQ3ERERAV1NVV3lVYwV1XfHmVFWUBX25BBSUBlkNUjNwQDrlyJ+ae3Jme6e56PzX5FW/ln6eqn+qpmunu+X8/n/4kPV1d/VTVU/V//jcURVEURVEURVEURVEURVEURVEURVEURVEURVEURVEURVEURVEURVEURVEURVEURVGqxZHfW3HQoYsBtAPYAmANgHcAPAPgIQAvpn2myxvKyO2Rx/DLR8DJO3ALbqq/lysV0dXUgtcnT0Uxm0O2XKp6X1u7/4apu52FjuFHJjpGRVEUpf9xnB1FZMYwggkARgAYD2B/ACcD+B6AFwA8C+AiAFm9doqiKMpgwiQwOyOOfwaA6wG8BeBTOlMURVGUwYJJYJYtjn0KgFsB3A2gWWeLoiiK0uhUKzB9TgXwEoDddaYoiqIojYxJYMaNsplG/+ZuOlMURVGURqWvGqaPp2H+UWeJoiiK0qiYBGa1eRVT6dNUFEVRlIYjKQ3Tx/NpHq3TRFEURWk0kvBhSn6us0RRFEVpNJLWMMGCB6foTFEURVEaiTQEpsdXdZYoiqIojURaAvMglthTFEVRlIYgLYHpoRXIFUVRlIYhTYH5fp0miqIoSqOQpsDcV2eJoiiK0igkWbhAMkpniaIoitIopJGH6dOks0RRFEVpFNI0ySqKoihKQwvMpDRMJ6H9KIqiKMqAk6YPUwWmoiiK0jCkaZI17VtRFEVR6hIVmIqiKIpiQZo+TBWYiqIoSsOQtg9T/ZiKoihKQ5AzHER/mmTzACbzNQbASABDADRT0+0GsAXAOgArACzkS1NfFEVRlH7FJDCTMslmDfuaAuAwAO8DMB3AXgA6Yo5gKYA3AbwM4BkAvwewLKExK4qiKIqRNDXMzfz37wB8AsBHAMxMYL/j+fK7oRQB/BHAQwDuozBVFEVRlERJU2AOB/A4gMNTvmQ5/ob3+jcAswH8jMJTURRFURIhzbSSXftBWJo4BsC9AF4B8E8D8PuKoihKA5JmlOxA8/cA/gvAqwBO18mrKIqi9IXBUHzd68t5B4CHAexTA+NRFEVR6pDB1K3kwwBeA/DFGhiLoiiKUmc0skk2jP8E8BsAw2pzeIqiKEotkmZpvFrmOPo2D9BZqSiKotgwmBtIe7mczwP4WA2MRVEURalxBrPABBwHjus+kC/2nFEDo1EURVFqmMHowyQOMqUSUOzBqhGjb+/O58/MuFqiVlEURTGTZqWfGsZBxi0hW+jC8o4JeGfcRLT0dN/muO5althTFEVRKrMLgNMCW21mGl9DMggFpoNM2ReW4/HO+Elo7i4gWyrBdZw5AN7DgCBFGQjGAvAWbgU9+8oA483F5RWGMAHAT8Xf7qwQPJpnJbhK+645TAKzgU2yFJbd1CwpLHPbhaW/kdf9ZJw+sPpEE4DrAAy13EmBLdwWAXiRxfQHG96D5x4AMwCsBnAJgF8OwvPQSHgNJz4VOJ4fA3iqDo7vQAC3AZjKe/LsiHF3i/eVOkf9Iyuw7QbgJQCnAliQ0LhTJ832XrWFs91n6QnLZR0TMH+cUVh6jALwIIAPNeR56B+8FeTn+vBL7wC4HcDVALrq6cD7gNc44GB+vYPCsw3A1ro8GgUUDJMCZ2IPAIfUwZm5gV2mPPYEcAtbMdoQZaH0FtJ3s+cxuDi8nkK0LhgcUbL2wtLHax32pfg/5CLjmNYgFcmx9dksvg62bMBdq5RpVqwW7yb9FwCv00Q+GJhiOMaWQXLsjcj+QliC9/jYOjjW8RXeV0s+ICx9KgnitsBzcRbP64BRSybZ9WwOvY6OY0+StQMYzQtoa97bAU8gZt8VlhO3B/hEC0uf/6BJbLHtbznIolBcX80whxlMHo2mXTzPayxPusObaLzhYTIZwLP8d0U/jnUguF5oH7/kvaDUJ58JGbXXQenKOpiLVwXeX5fQfrdQWz0n8LdrKnxnH+GiWQJgYkLjic1ABv0UGJHqmT+fAfAWgE3YrhBKvN6a06h5eer70TY/8P+FZQFLx07EgrHWwtLnnoCZzIru4oZqzoXLRtj+9djcgKbx03mNw8jRd/IF4fdp5k32kYEZdr/hRRauAnAQ//3vBj/eRiYnhEKQc+pAYF5N687e9C/eneC+zwXwGN0OL1pkJUgFbnOCY4nNQAjMhQB+xEiqv1l+x9NM/sLXj6hxnMWH626mLwQ1S09Yzo8vLD3eD+BEAL+y2dhFCW3N42z3LSkErkcjBhwNr/C5t2B4mgEGnlb/jcBnR/PmfTPlMQ40j/Kl1DcnCItYgQs/8Nl1GIAna/wIrZ55VXJrjK9JxUEGGfUr/enD9MyLX2Xk1X/GEJYmPKH7Xfq6vis/30FYdmzXLFu7u+MKS5//Y7ORizJymVa0NUu3hRWmc95ovuQ4zt1vUssK0ugaptI4XBI4Eu85dzKAnsDfLtRrbU1NWdr6q9LPbJpUr014/1sYHOLZuf8Eg2a5gD7LbKlYjbAETQfnV9qoWNyKtuaJGNpSlcDcIARkKUEt01vpjkxoX/3JbPFbfzeww6nIcEZYt9bQmFo4prQ684zg3MqnsO+hHHt7CvvOc9xpjN3zwx8aeO/FJvwOwCuBv52awjXJ8HhGJLzfgWah+P0Btb71R1rJtwH8a8L7lPwVwAc9c222XLrY91nO79Us3y1K0Jf9ew7wn0VtUHK70JwfBccuStaL/LyI59rlgy0YETmMycBFvnfo03pa7OcgBhe43MYzWd/Mm+fL9BtO5XX2UjXexwl3OUPcXW7rOdX/r+W58IJz/jnwvpkRxVU5byNYJD4aFbHtUVzF+8fzmKXfpZXpHL65rJvHtsXiu97D6Uz61Pfh+LK0pCzntfgVffQ2zKKbwb+WT0f4Mfdj2o5/vN4D+QF+NoV+smN4jduo3Xiazp/pD37CckwmPsEHvudvHsOxbuT8epj5e+9Uue/T6QLxIiF3pzDzrslK5uw9QF9v0WJfkn24/6N4XnyBtZEP5ccB3AvguSrH7iODfe7lv3cEuiNleR5v7ONveZzH6/HegLBczfN1T+C+nsZewP788sb1PyH7PJ7zp2yYX33ln3ge/HH8nIF9PkewcpD/bNxV/N6ezGf1cWixfJP//z7nvL//O5lbb4P3fPx04LteTM0Vwe+l7cO8kDk9/UBvubtLsoWupUs7Jl6ToLAEHwxeV5Pfhm3gmWO7ulei7PYg41RctL6nQp6iJzw/K/72ikFgzhD76eYN8jIfEEGmUzAUmCQf/N4FzHu0ufbnCpNSsY85l2FIrTjK2X+UGMNoS4HpRedeKv52lYXAvJCCdhfDZ60UntNpmfgzx/ZyhX3OEsewb4TAfK/YdgMfaFdwXNJy1EoBMY3X74YqzIJHMlrSlOYzhALOO4b/xXP4zRj7Poquj70Nn7XyPO9NwfAdLtDui7F/L+7h4pDP/LF/AMDXef9c0IcI9eB18XKIf83/30QLm8+FfRSYMzhWk+VlEl/HcXF8hCE3en0FgXle4H0mQYH5WS70fV4UAvPwCs+TUYa5+1sKTJfHemDgs4PF+yi+KwJKdyqgkrZJ9uYE9xWKJxC3V/Dpxobho65dOmbs15qKPUkJS5+vRn2YzbRgW/cKbOuWrjcj1QzK9B2p1XmC4hGDsPTxrQemh5ltoYaTxfsvCf9MUhwr9hO18l8j3tuW3CoJ4bjNYv7/gCtck7A0MZOr/X+osJ1MIVkSse1G8d5bTFzGEH2b/F3vgfRDu+H3cjGDkWxzYr8R0KwqcRbnrElYmpjEfV9msa3D4JowYWniLF6vakybh4nUqLs5p8C85KCAOqAPboZZFDI2338vsxAuENZDec8EkSlcK6scpwmZpiefYX19Nl4iPjuAC6JKNPH6BblcfidtDXNi2pGNnkDMlYrI9HRj2e4TsGj3cciXitdkSuUpruNckOBPfZDmyKWmDx0ni57SFmzqmm8TKftcIFjJ5Sr60oA/ZRtX8z2ByWATVXemeN/J8ZZpBvIfphu5Kgv2Aj2ZD64oxhoSh++yGFdcPkezWZAkQ9ur5XzDg3outYi3eL28i/9hACeJ7Z7gZ2nUz/xnYdK/iw/JjfStvo/aWZBLqWn+tcK+z6OGFuQVmrpe5dyaSq0k+MA5iYuLqAIg3lz6hfjbQlo75nExM5IC4nzxYPwBxxE1Z+8W/kTQTP4oFyQOte4TuLDxmUqzftwG89Ja8XPx/gZq0z6fNzzgKzEyxKTuaWpzmAaS5QLkWP67BzMK6iFV7cHAdS4zhiRobVsZqF3rbxes/f0n3mPBhcsJFpbOw8U9tIT39g6kLTBTrVbTKyyL24XlovGTsahjHFoK3ciUew/hc7zRkqwUc64pKtenKT8cS9bej9HtByKXbYvaz5sMVgpyQUBgbqJ5qFrm0W88R5gys4H//1QIzNN4A0ddf1nC6lFDNGsY0nkfxkVMnA5ycR8rByVBs/CdgBrd1wz7voHn6gHxkL9G5JgmhX+jz6X/0rRIPYw+xubA3y6tYJqdRFNikH83rbwDwvE/An+7jL7/10L2L8/no/SdSYvFLfRTPUR3gs+NTNMw4aWEnSL+flJIusS1vB+DsRb781pJgR5GC02gPksNi9wHuAjwHw7n8RrEEWS3GJ7bl/O6SC4Tx5WYuS1F5gpBNUQITG9B8K0KP//fIi3tExYCU1rOjDEdaZtkU7tAQWG5cMKUXs2ytVBArrzD8D8WvoeqODHqS/ns0F6T7PxVsZWuEeJaZPsQbfkUzTC/NPj9gidnTsBc5I/h8Ar7Pk28tw0U8vgkr4d8fRzAGfR9PWMQltcb/jYQfEhEVD4XIix9fkfzXpBThcBKkqepJYVZdJ40jPeokG19pEvlphBh6fMDgxC8KmTbMUKr20CNKMy8/zq1xeAcnhRRWESe+x9XyC38jiE/MI5v/hwhyO40bNMtWl+1x3xGvcew/RUhwtLnOwz2qVekqd7muSjn7eGcb1FIi5DRopV2HmYqGua7wrLYjQUTp2DxbmN7hWW2XJZLtUVixdtXDqSJwDwut4QhTWOxYv3jWLf5pTQOvRJrY+Qr9hj61smHTJA2Bn74lGMmN3+fK2z5up8muG+JYIA/0rQZx/+UJtJS8bDFb90utIdmLmaSptOy+tXt4v3ECF/sPmIBtSai3FuQL4iF2gkhKRR7ivcvWCSlL+KiKkiYb3iCeG8zV68V7+NU+bpIvJeauY8UynFMsp8X71/hfVWJ6wZZQYy3RRoPDAIxyMGM//B5kybunag5genCgQMX+UwPcpkisk659/27n78rLHswf8IeWDJmLIYUupB1S2F2ja9ZpgnYEvlg8oqv53PDsGD13SiWkvxZK56IWTpKRumdGnHNjhefPZBCKomPSx9CX0P8k0RGTYYFVklm0jx7LP9No5XRU5bXYpXwoTZFrLylcPzflmNxDRGsswzbbRPvw0yrknPF+QxrgSY11b+32Pdrgf16r49ajuk9jIr2mUeN2MQfRBzEURbaj8+R4v33LL8HBjINJmSPzrMjjv108T7UDG96OCbpGI5tkvWEoyc0i+Vc70gy2QJyzRuRb1mHfNNmNJUKyPQUsWDCFCwd42mWXXDc7d8JoZiwSe/9UR96FX/yuV2wrWc1tnb3e3/UuOd7rohaa48wy1rZ+CNwI16m4ziDkaM2K+j+QOZynWDpj/wLAxlm89+o6MRqiXPdZYRtWA6UtFTcEuM3pPZtiiP4qxBqk+mnrMQb4nzOD9leaqLfsuh04Qb2+2BE2oVEBhfKYB+JPJc2wYljGKDkU46R44sUi1fUKtIkPjNiYfJx8f62sGOqOR/mkNw2bOxpw01vnYIb3zoNd75zPH634Fg8vfwQrNg4tndOL540EYvHdGBIYRuyrpV8TzIXdHqlDRzqyT2lfq8TnLXYRiJv3k8atsnQPOqzKZBfZstJgfww+ZrMZPzTDdrJV2qkEPk8Q17WrTR1fcZgAuxP4lx3ua3JojRU+I666Tsay0jfqFeHoTqPqXVZl0FD+iLzVa9gHmpf+Kkw8Y6k2fd2BuckWRHnDPG+Uq1U6WOrWEnMoCHPpyleMbOacRpBTDEoU4V74NkoK1DNRclmM2UUy1ks3zYG3d1NyHYXe997ore5UMDe+87HPuMWo23zNmRca3V4IYMiIrVDS6ZxIRDx0xmU3SKKJbmYr0luExG7pxrMcUeKYtL3V1Ft5dUKuYXgw/IuTuyg4DyXEZKmQIr+5DhqLsEb7Ei+yjR7PceUhDgRxLXGBJprfbL06diUsTLdF6MNf0NA6wuu8Kczmvga+pKeZ8DSwzErCG2g+0SmYJzB1yYe09NMTXm8ysLeJ4gqVPdbCLK3abHw/a8TWThhpzSGALLijXXbwUHMzcKsfjabegf5hHgf+YxJ2yQb34fpOsg4LtpzWzEsvxnDmzZidEsnRjd3Ip8BXtswFpu2ZjEkU4w70PvjjiWEMTb+Fk/L7CnVRTvLN7jy9hlq8NPKSRVqsogg7KFp4lei/B4MuYADQScf6KaAjgzz9s6nFrOQWritH6yWkBpilgFLWYtXziBYZdPgIMdxwSZ9mqCWezojXN+m4DwvfFc78Xuag015i0MZdftlaiILaYmKm4b2BfFe+s7CkFYTmcMpkedwU8xxDkZ+Q0uGzyGGhYfUOiNdTTXnw4yiPV9AT7GE1Vtb0JSNbTmWZeX6gozwM5BBuVw3XbrkzSujZYNVd9YaCqOnwbVisu/KVfhAs40a+H4U4mE9PlsZKDWbRSLkjVrLJB3d3lThc7/z0L9UCPQ6lIuVl2NEsL7KcmkfpfYQpvV30Jc4j+kxNnQYKmRdzeCh1yNerxkqh51UYWEhLX8D1ei/nuhiPd0gwQCfcSwx6POHSlWN6q5wQbGcwfpCE5yhFhvvyIucZNX4+STGHpw74qDkVlMjekC4jaHn/gInaCKbKapmhEUlJk2JATPBtIEDK5it+pOXqRVcSrPioXyIH0y/SJB/5IN4f0PZsVpETtzXaBaP06ItiE3Rib9RcPrC84OcewcbgnWmcx4cSVOqDQ/x1cJ9fpAumpmGxcxl1DQrpeqY0myqTRtqoskwLN5CmqvSyudtNH4ugvPOCER8y1STiqVc605gek/0LT15lF2nkiNRsprh3FX13xJUaoYMr4St6w5or9M4rKNZ6hh+ZziDfB4xmCwqRQAmieyZalu/tb95kS//RpzFCjrBAKrdWAPVlGJRa8i6tkMMUadp8g5ffkDavuwi8WXxmw/S1B8nf6uLplo/6rmVFpTLxLX5MDXe70TsK+mmA+dHCEyp+djUR1W2X+elLGsKLpBG0L1yfOD8lGzKfJoEZpKqfvIC03HRU84gny2jOVfs9XnGYHVCAjPKdLIdt4Sck0ZN8tS4NSAwQUH5iNA2l/Xzg1PWFwxbgch5NtDmqj/x9YhYtR5CDaRS55KBZgnTT/xUhMmMdE0jh9SG1xgtfRvPq1/tpYXaQ1+i4LdxIXMvr9U5gc++xEpFJiViJk16Pp0x/Jc+Dgtz+Mczg0GFbxi2fSXQbgssvJ6rstXZYOMusdg6gkGFQXP6IzYLr7T7YSZeGs+bLd2lLDZ0N6FQzPZqmjHoirNxBBXNIdt68mgvVmvBGhDuE3UuD+TKPtgRIY1C61FIP1VYYqsUpJV8Zj6bLS0qe3IB4d8biw2+ERO30GwXLAA+qw4EZg+jU4M5uceyBVcS5FkZx3ePFOkSqMQLHMNXAtsdZPjOLOHvftJyoXcutQ7fgjScCwVTdK4M9vH82VdWcW5GU3v2+VxIJ5ZOLhz8oKQ21gd+zPJ3BnOQ0M1CYP4DF/9BrFLX0jbJJi4w25u6sWpbK+58Q7qJrEhE43UtztGqLcNxxOTdMC20kN4OOGJspQFYOXZTaPr2/v0MQqE/zbGnGxKNw/yXcvJXzJUl7aJDQRhjDQUUbOf2M0Jg2vxeLXCHEJhfjykwczxHJjOLayhSMNuys5GcA6bF67EiyvoPhtZNYbzF7i4+pmiJVkPkeKXcyzBuEALzXC4ITFaSx0UU79djCMxqW4kNNPKZXc1z8RUGf/m5rCdTy/Tpti3zmWo3kTT27+2w5DrY1JPH5vivtiq+s9NrS0++a8v2f0Nf3vgKJev4oh6h2Q8ZIFNL0KTUIpLH347oOmFDnIXYnuxyEeSFCJOg1NgONTSgNnFTRKWbIE8ZVugyWT0MmfsrhXut8gtxzcbF7G87l1Gipl53RUOwTlQbsCAzxfvVhm1kUY2ZMdKa5ErclDv8KRE8+ExExaFKPCNyKocbugL5SJPvUYYqNSZOEe6WekJaPCu7w8wENchxYlF9r21P37rrVuL21mt10ZItoTn+q6OK75hemytt443PcaxP5WZ2QPdpt2g4nAZ/jIji7Gu1HZs6gUNpqnvJ4L+UJrAgbxgChGRh+SBtFJaR3WcClAy1VG+y6O5yKaMxg9gUba8FthnO+TmGbiSSCSwpN4MLn6UhdVxlofMLLIJojjQUK/+NYbtnGJXsk2PwRyV7z32iAtCLIRG+sgh6Xxvly5rOYaXyXjHMn99ECFhQuNu4D2oVGey0d5UBT1GlHa2fbXXdDzMme8QoclyJiiWpMnBQKFkH/bhcjQfTN7zk928zobqDQuEvCY0/ittDVvuy00Vcboyoo5rjtdkvRDO8mlpeFF5lmB8GPj+aZa5uDpj6OujzOqWKm+5b9Ef6KUUt1JJuYSuv1ylkhjOw5xSRv+rxb2JhVOv8hOfxhMA4L6RmcxOvyTJq6XtRoF0gWjC9EXLd59AMG9R8fkIf4j1cNK2nRjGNQuFcsY+nDDV+fc4QHSv2Zf3aG3jd5nMh1EErwHmGogVf2Xm3vRrofuJvfW1ufouIxj2W88yUE3i2WNQ6zPO9l+d0EbXfaWwFVqmFW62znFq+X3oyyypaVzOndgLv80pxAWvoy5am+U1xOrnUnQ+zD8xIcF8VtaWmbA4bumJ1K/mJiNrqECaYa/pJYP7UIDBfitEAOgzbtmOSK9krsxLXUUMJ+mpmVLjunSyhZtMpo0Rt8SmRt3eOiKwMY46helE9cCL9O0GhuReFfyX+zAdUmHvhY/QvHhL420ctqyMtEg2bJa/SDx4sdTaMdWqvsNj/lSEPUtlubnYCBfWXUCsO+k4/HXKOV3KRIYuHnGxokOBT5sLFtsNOrfEjEUOwr6jIc7FlIN2NBoF5RxyZV1eVfnqjbbIuyjGKyAaQvo9qKdsEJ7Tmm7F0wxqs3WodnHavofB4EFNKhQxIMPmL4vKGQZsL6+0XhiPqa1bDbPoibYSlzyxR5i+Kp5gQHyzJ1lqhsMXb9H38Nubx/MDChyRzTKPMh7J03fiQ7UzIQug2EcWe0PymrZ+HXE9BGOWLL/Oa2bYO8/k1tbxKBRHu4gNS9kaMYj07/Jvm3SiDSTipxgAyNeZqg1vCZw4XFTJf1sR6atDSbBz1bJb+3ij/r5w/lZoQjBXvbUrQ/HuFKGfbeXm3wecdpwtP6hpmElV13sXNuMh3ZXuLrpfzZWR7MoiRVRLVQDQOi0ICDXagOZfH4vXr8dSS1/HxadY1309msvRnxcRbEyKk32GdTJc3gOymUS33i1V/XJNTib6VXSwWYA7nXCe12HkUZmEl56JYx3SYi+m7mS6iUtex9NptgRtlbsD0VbBIPVrJQAvvQXwmo+2miOChrRz/HEZP2gRL/VVcyygz0UKxbZyyj3dSwPrXxdZEfBWP5RxqdvuKB3oXj/khbjcvYl+SS2hhOYsLi2kiuKOHx/x7ahZhZlgTf+A8OI2RrQcbFpad1FB+zbGHCaJ9eK638LxvjtlEPYp7qBHneW3amDMeNnceoqZ/KY9tWkAI9nA+3ceFi23zb5+nuW9/fkUJq/WBAC7HouHAw5wr/r5tC+rP5MJTRs8vj2H96uax+T7fZRaunh3YSdysOOjQzxgiFKvlGEOLlUiGbN2MlbuNx69P/AyKuRzyPTsqVrnuDLaMLGDlHhuRLTm2QvMDNA8lwWyDb8rIxsI2jBoyFFd96JPIOLHcuRlO2FbenEtDilOnxXMUPODNIBvX1gu70heU43lcnnAzcZ8Oah85Ct1VluXg6pmRPLfNfECvsllIWhLcd5HnUgZ1VUuWC4bhAaG3Imbj9f4iTjGzCZyDZV4LGbz3C1Ej+vNcpNQbLYxHaWJxjcUxMgra+Cz182y/X8k87zg7Cpe0CxckqmF6FPNlDF3d2jvIVXts7G3YnKssNC9PcAgv2m44rGUIFq5fiaeXvYUPjJ9m8Y13KYdU++gP9g8IS0R1H68DVif4EI/ibwk+0OuFdZYmwWpIc98lWokW1cF5jvMsXlKhfd4B4n2cVmm1RFcf0ts+Jcqaxs6dNak9tR0l6wDdLUUMW92KMfOHwc26vULUCZ9aExM0x4KluazwxuRVvH1pRV/jZfqVYJuhYp2HpCtKIzI9ZsPyvUVqT3eC7pt64sLAWN+I6dvupf4EJig0W4sYtqoVY97epTcQKEJoJlmdpitGZQ24cJHLZFEs100nnpGisv/sGjVVKcpgZSj9rc/bNIEgsn/tbw3dTxqdw0UnmWp6+tapwCSe0Gxf24zd39qlNyCo2LST0Dwu4TykJ6rxJXpCsw7YlYEmwcFeUw8DV5RBQlsgGG40TZNRxTcmMzhI1tv9xiCbMNMN1Z8qFeAwUt+FCxygp7WE9rUtvYJyxV4b0dNcQq6Q9T4bkUBCsaS/i4+nyf4Mzc/z/2eJ1IbH4pifFUVJHT+2wS+e0cFI2HlsdfYmg852ZVTpyYY4kisYQdvIfIiR0O2M9v+kONbvVhuUV3fdSkx0DyliSGcLdn/TwZpJm1DOuciUnMcTbrJabjCBeRqLN5soGIpLK4oysGxjycybWJnIZ7plw4HvGZoINCLfjChb+TpT96oibZNsf0Qo9tLTWkRbZzN2XZ4EHjsAAASISURBVDAM5Vz5d+Wsu1+ion97abj+TO1Im7Bk3zVMJu9r9RJFUdLh0yy9GNa9R/Iqtw9bIDcaYX1zX+hrA/e0TbIXxUwy7hOe0GzekntwlxVDjukcuwV5Nwun5CSl58pi0fXOAgb0+FVjVrDa0JUqLBWl5vGbXh/Gqj8H0mfZzoX9MkaB/o/Bf9fozKOG6VchepsFL+JUDTOStkn2VAaSnBlSSDhJproZ3FPOuvuPWtwrA9zOsVucfCERoflszMol9cDNrMYzMVDur9Bgx6gojc6TfPlkE+44VY98heX0dmdmQ2I+27Q1TLBKzGssf1VVKK8FF/Y2pHXR7OZcFFHGqMVDnQSF5hdTGvdA02nTeUVRlLphsAtLnxURrQqrJm0fps9IqsQPiu7zfeWjXF39+N0AH68uuyc08yWMWjTUGbG8zfUiZ70CB1XyJ40WVRRFUfpLYPocQwE3h1GaYdX4oxjBvni/D3S02BFfaDaVMDooNDNVCc3PVnmsiqIoSgORtg8zjI/wtYba21wW/F7E/JgupqS0MkF3MpNvZzLKaVjFX6DQ7IGnabbvaJ4tW9tm/4thyIqiKMogpz98mFGMZof14wPbbAPcAraXU2/pUy4lhWbJ82l6QtOF2znO2qe5VtQeVBRFUQYxAy0wTbTylQxe78yc29vVZNTidseB464bu9nJd1cUmif2k7atKIqi1AEmgdl4+D5NZ7vQBFx3XbSmeRUbzyqKoihKL6agn7AKMPWNJzSzbm+t2ZGL252RSwPRszvqkY+ytJKiKIqivItJYG5o2NNDoVlsLmPUkqHOqJ2FplcR4ugBH6eiKIpSc5hMsgsa+jIFNc0lQ70mJ27nuK1OrpBZ67jOB2rAh6soiqLUICYNc001najrioDQ9DTN4cuHrC3n3PdX2/JFURRFaXzC+lU+0fBHTqHpOu6ytvXNBzllZ77bL83IFEVRlHokTGAOjur2Ll5wM+5+pVx5YQ2MRlEURalhwgSmFym6vMEv3B0AZqgZVlEURbEhTGCiL12p64AvsuWYFiZQFEVRrIgSmDextmsjMZda5XU6PRRFUZQ4RAlMj9Mb5Gx6xdyvYPH252tgPIqiKEqdUUlgehrZt+v8ov4EwFQA36+BsSiKoih1SiWB6fGvAH5RZ4e3FcD1AKYB+DyAZTUwJkVRFKWOsS2+fjaAIoDzYh6qX8B85ybP6eD11LwVwF0AVurEVBRFUZIiTreSTwNYHNNEezc1Pa/k3AkAjgBwYIJdUjzf5LMAHmPu6AsJ7VdRFEVRdiCu4LqSwumHAA6w2H4S/53Ll8c4Cs2DAewDYDKAsQBGAmgK2U+B+ZLLWev2VQB/YQDPKr2kiqIoStpUo+k9SYF3PoAvANgvYts2w9+W8fVA4G95CsxdAAwBnCY2qSzQH7keQCfNwoqiKIrS7/TFNPozvg4DcCJTNvai8PNZb7mvHvoc1e+oKIqiKIqiKIqiKIqiKIqiKIqiKIqiKIqiKIqiKIqiKIqiKIqiKIqiKIqiKIqiKIqiKIqiKIqiKIoyuADw/wDQeqeIePblowAAAABJRU5ErkJggg==");
 ;// CONCATENATED MODULE: ./src/components/Footer.js
-const Footer=()=>{return/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"text-center text-lg-start text-white",style:{backgroundColor:"#022c46"}},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"container-fluid"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"container p-5 pb-0"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("section",{className:""},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"row"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-3 col-lg-3 col-xl-3 mx-auto mt-3"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h6",{className:"text-uppercase mb-4 font-weight-bold"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{href:"#footer"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:trybusinessagility_footer,height:"65px",width:"195px"}))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("hr",{className:"w-100 clearfix d-md-none"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-2 col-lg-2 col-xl-2 mx-auto mt-3"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h6",{className:"text-uppercase mb-4 font-weight-bold"},"Products"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"text-white"},"link 1")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"text-white"},"link 2")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"text-white"},"link 3")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"text-white"},"link 5"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("hr",{className:"w-100 clearfix d-md-none"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-3 col-lg-2 col-xl-2 mx-auto mt-3"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h6",{className:"text-uppercase mb-4 font-weight-bold"},"Useful links"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"text-white"},"link 6")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"text-white"},"link 7")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"text-white"},"link 8")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"text-white"},"link 9"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("hr",{className:"w-100 clearfix d-md-none"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-4 col-lg-3 col-xl-3 mx-auto mt-3"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h6",{className:"text-uppercase mb-4 font-weight-bold"},"Contact"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa fa-home mr-3"})," New York, NY 10012, US"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa fa-envelope mr-3"})," trybusiness@gmail.com"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa fa-phone mr-3"})," + 01 234 567 88"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa fa-print mr-3"})," + 01 234 567 89")))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("hr",{className:"my-3"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("section",{className:"p-3 pt-0"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"row d-flex align-items-center"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-7 col-lg-8 text-center text-md-start"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"p-3"},"\xA9 2020 Copyright:",/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"text-white",href:"https://mdbootstrap.com/"}," trybusiness.com"))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-5 col-lg-4 ml-lg-0 text-center text-md-end"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"btn btn-outline-light btn-floating m-1 text-white footer_icon",role:"button"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa fa-facebook-f"})),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"btn btn-outline-light btn-floating m-1 text-white footer_icon",role:"button"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa fa-twitter"})),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"btn btn-outline-light btn-floating m-1 text-white footer_icon",role:"button"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa fa-google"})),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"btn btn-outline-light btn-floating m-1 text-white footer_icon",role:"button"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa fa-instagram"})))))))));};/* harmony default export */ const components_Footer = (Footer);
+const Footer=()=>{return/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"text-center text-lg-start text-white",style:{backgroundColor:"#022c46"}},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"container-fluid"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"container p-5 pb-0"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("section",{className:""},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"row"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-4 col-lg-4 col-xl-4 mx-auto mt-3"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h6",{className:"text-uppercase mb-4 font-weight-bold"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{href:"#footer"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("img",{src:white_web_logo,height:"55px",width:"195px"}))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,"tryBusinessAgility, a flagship of tryScrum. Our mission is to discover, preserve and distribute knowledge and capabilities to enable the next generation of organisations to be capable\xA0and\xA0resilient.")),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-4 col-lg-4 col-xl-4 mx-auto mt-3"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("hr",{className:"w-100 clearfix d-md-none"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-3 col-lg-3 col-xl-3 mx-auto mt-3"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("h6",{className:"text-uppercase mb-4 font-weight-bold"},"Contact"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa fa-home mr-3"})," Plot No 244, Fortune Residency, Tambaram, Chennai\u2013600048"),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa fa-envelope mr-3"})," help@tryscrum.com "),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("p",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("i",{className:"fa fa-phone mr-3"})," +91 9789490848")))),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("hr",{className:"my-3"}),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("section",{className:"p-3 pt-0"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"row d-flex align-items-center"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"col-md-7 col-lg-8 text-center text-md-start"},/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",{className:"p-3"},"\xA9 2022 Copyright:",/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("a",{className:"text-white",href:"https://mdbootstrap.com/"}," trybusiness.com")))))))));};/* harmony default export */ const components_Footer = (Footer);
 ;// CONCATENATED MODULE: ./src/components/Header.js
 const Header=()=>{return/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement("div",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(components_Navbar,null),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(components_Banner,null),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(OurMission,null),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(components_Capabilities,null),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(components_OurLeader,null),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(components_StoryTree,null),/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_default().createElement(components_Footer,null));};/* harmony default export */ const components_Header = (Header);
 ;// CONCATENATED MODULE: ./src/pages/index.js
 // import "../assets/css/style.css"
 function Home(){return/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_.createElement("div",null,/*#__PURE__*/external_C_trybusiness_trybusiness_node_modules_react_index_js_.createElement(components_Header,null));}
+
+/***/ }),
+
+/***/ 3096:
+/***/ ((module) => {
+
+/**
+ * lodash (Custom Build) <https://lodash.com/>
+ * Build: `lodash modularize exports="npm" -o ./`
+ * Copyright jQuery Foundation and other contributors <https://jquery.org/>
+ * Released under MIT license <https://lodash.com/license>
+ * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+ */
+
+/** Used as the `TypeError` message for "Functions" methods. */
+var FUNC_ERROR_TEXT = 'Expected a function';
+
+/** Used as references for various `Number` constants. */
+var NAN = 0 / 0;
+
+/** `Object#toString` result references. */
+var symbolTag = '[object Symbol]';
+
+/** Used to match leading and trailing whitespace. */
+var reTrim = /^\s+|\s+$/g;
+
+/** Used to detect bad signed hexadecimal string values. */
+var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
+
+/** Used to detect binary string values. */
+var reIsBinary = /^0b[01]+$/i;
+
+/** Used to detect octal string values. */
+var reIsOctal = /^0o[0-7]+$/i;
+
+/** Built-in method references without a dependency on `root`. */
+var freeParseInt = parseInt;
+
+/** Detect free variable `global` from Node.js. */
+var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
+
+/** Detect free variable `self`. */
+var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+/** Used as a reference to the global object. */
+var root = freeGlobal || freeSelf || Function('return this')();
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var objectToString = objectProto.toString;
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+var nativeMax = Math.max,
+    nativeMin = Math.min;
+
+/**
+ * Gets the timestamp of the number of milliseconds that have elapsed since
+ * the Unix epoch (1 January 1970 00:00:00 UTC).
+ *
+ * @static
+ * @memberOf _
+ * @since 2.4.0
+ * @category Date
+ * @returns {number} Returns the timestamp.
+ * @example
+ *
+ * _.defer(function(stamp) {
+ *   console.log(_.now() - stamp);
+ * }, _.now());
+ * // => Logs the number of milliseconds it took for the deferred invocation.
+ */
+var now = function() {
+  return root.Date.now();
+};
+
+/**
+ * Creates a debounced function that delays invoking `func` until after `wait`
+ * milliseconds have elapsed since the last time the debounced function was
+ * invoked. The debounced function comes with a `cancel` method to cancel
+ * delayed `func` invocations and a `flush` method to immediately invoke them.
+ * Provide `options` to indicate whether `func` should be invoked on the
+ * leading and/or trailing edge of the `wait` timeout. The `func` is invoked
+ * with the last arguments provided to the debounced function. Subsequent
+ * calls to the debounced function return the result of the last `func`
+ * invocation.
+ *
+ * **Note:** If `leading` and `trailing` options are `true`, `func` is
+ * invoked on the trailing edge of the timeout only if the debounced function
+ * is invoked more than once during the `wait` timeout.
+ *
+ * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
+ * until to the next tick, similar to `setTimeout` with a timeout of `0`.
+ *
+ * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
+ * for details over the differences between `_.debounce` and `_.throttle`.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Function
+ * @param {Function} func The function to debounce.
+ * @param {number} [wait=0] The number of milliseconds to delay.
+ * @param {Object} [options={}] The options object.
+ * @param {boolean} [options.leading=false]
+ *  Specify invoking on the leading edge of the timeout.
+ * @param {number} [options.maxWait]
+ *  The maximum time `func` is allowed to be delayed before it's invoked.
+ * @param {boolean} [options.trailing=true]
+ *  Specify invoking on the trailing edge of the timeout.
+ * @returns {Function} Returns the new debounced function.
+ * @example
+ *
+ * // Avoid costly calculations while the window size is in flux.
+ * jQuery(window).on('resize', _.debounce(calculateLayout, 150));
+ *
+ * // Invoke `sendMail` when clicked, debouncing subsequent calls.
+ * jQuery(element).on('click', _.debounce(sendMail, 300, {
+ *   'leading': true,
+ *   'trailing': false
+ * }));
+ *
+ * // Ensure `batchLog` is invoked once after 1 second of debounced calls.
+ * var debounced = _.debounce(batchLog, 250, { 'maxWait': 1000 });
+ * var source = new EventSource('/stream');
+ * jQuery(source).on('message', debounced);
+ *
+ * // Cancel the trailing debounced invocation.
+ * jQuery(window).on('popstate', debounced.cancel);
+ */
+function debounce(func, wait, options) {
+  var lastArgs,
+      lastThis,
+      maxWait,
+      result,
+      timerId,
+      lastCallTime,
+      lastInvokeTime = 0,
+      leading = false,
+      maxing = false,
+      trailing = true;
+
+  if (typeof func != 'function') {
+    throw new TypeError(FUNC_ERROR_TEXT);
+  }
+  wait = toNumber(wait) || 0;
+  if (isObject(options)) {
+    leading = !!options.leading;
+    maxing = 'maxWait' in options;
+    maxWait = maxing ? nativeMax(toNumber(options.maxWait) || 0, wait) : maxWait;
+    trailing = 'trailing' in options ? !!options.trailing : trailing;
+  }
+
+  function invokeFunc(time) {
+    var args = lastArgs,
+        thisArg = lastThis;
+
+    lastArgs = lastThis = undefined;
+    lastInvokeTime = time;
+    result = func.apply(thisArg, args);
+    return result;
+  }
+
+  function leadingEdge(time) {
+    // Reset any `maxWait` timer.
+    lastInvokeTime = time;
+    // Start the timer for the trailing edge.
+    timerId = setTimeout(timerExpired, wait);
+    // Invoke the leading edge.
+    return leading ? invokeFunc(time) : result;
+  }
+
+  function remainingWait(time) {
+    var timeSinceLastCall = time - lastCallTime,
+        timeSinceLastInvoke = time - lastInvokeTime,
+        result = wait - timeSinceLastCall;
+
+    return maxing ? nativeMin(result, maxWait - timeSinceLastInvoke) : result;
+  }
+
+  function shouldInvoke(time) {
+    var timeSinceLastCall = time - lastCallTime,
+        timeSinceLastInvoke = time - lastInvokeTime;
+
+    // Either this is the first call, activity has stopped and we're at the
+    // trailing edge, the system time has gone backwards and we're treating
+    // it as the trailing edge, or we've hit the `maxWait` limit.
+    return (lastCallTime === undefined || (timeSinceLastCall >= wait) ||
+      (timeSinceLastCall < 0) || (maxing && timeSinceLastInvoke >= maxWait));
+  }
+
+  function timerExpired() {
+    var time = now();
+    if (shouldInvoke(time)) {
+      return trailingEdge(time);
+    }
+    // Restart the timer.
+    timerId = setTimeout(timerExpired, remainingWait(time));
+  }
+
+  function trailingEdge(time) {
+    timerId = undefined;
+
+    // Only invoke if we have `lastArgs` which means `func` has been
+    // debounced at least once.
+    if (trailing && lastArgs) {
+      return invokeFunc(time);
+    }
+    lastArgs = lastThis = undefined;
+    return result;
+  }
+
+  function cancel() {
+    if (timerId !== undefined) {
+      clearTimeout(timerId);
+    }
+    lastInvokeTime = 0;
+    lastArgs = lastCallTime = lastThis = timerId = undefined;
+  }
+
+  function flush() {
+    return timerId === undefined ? result : trailingEdge(now());
+  }
+
+  function debounced() {
+    var time = now(),
+        isInvoking = shouldInvoke(time);
+
+    lastArgs = arguments;
+    lastThis = this;
+    lastCallTime = time;
+
+    if (isInvoking) {
+      if (timerId === undefined) {
+        return leadingEdge(lastCallTime);
+      }
+      if (maxing) {
+        // Handle invocations in a tight loop.
+        timerId = setTimeout(timerExpired, wait);
+        return invokeFunc(lastCallTime);
+      }
+    }
+    if (timerId === undefined) {
+      timerId = setTimeout(timerExpired, wait);
+    }
+    return result;
+  }
+  debounced.cancel = cancel;
+  debounced.flush = flush;
+  return debounced;
+}
+
+/**
+ * Creates a throttled function that only invokes `func` at most once per
+ * every `wait` milliseconds. The throttled function comes with a `cancel`
+ * method to cancel delayed `func` invocations and a `flush` method to
+ * immediately invoke them. Provide `options` to indicate whether `func`
+ * should be invoked on the leading and/or trailing edge of the `wait`
+ * timeout. The `func` is invoked with the last arguments provided to the
+ * throttled function. Subsequent calls to the throttled function return the
+ * result of the last `func` invocation.
+ *
+ * **Note:** If `leading` and `trailing` options are `true`, `func` is
+ * invoked on the trailing edge of the timeout only if the throttled function
+ * is invoked more than once during the `wait` timeout.
+ *
+ * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
+ * until to the next tick, similar to `setTimeout` with a timeout of `0`.
+ *
+ * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
+ * for details over the differences between `_.throttle` and `_.debounce`.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Function
+ * @param {Function} func The function to throttle.
+ * @param {number} [wait=0] The number of milliseconds to throttle invocations to.
+ * @param {Object} [options={}] The options object.
+ * @param {boolean} [options.leading=true]
+ *  Specify invoking on the leading edge of the timeout.
+ * @param {boolean} [options.trailing=true]
+ *  Specify invoking on the trailing edge of the timeout.
+ * @returns {Function} Returns the new throttled function.
+ * @example
+ *
+ * // Avoid excessively updating the position while scrolling.
+ * jQuery(window).on('scroll', _.throttle(updatePosition, 100));
+ *
+ * // Invoke `renewToken` when the click event is fired, but not more than once every 5 minutes.
+ * var throttled = _.throttle(renewToken, 300000, { 'trailing': false });
+ * jQuery(element).on('click', throttled);
+ *
+ * // Cancel the trailing throttled invocation.
+ * jQuery(window).on('popstate', throttled.cancel);
+ */
+function throttle(func, wait, options) {
+  var leading = true,
+      trailing = true;
+
+  if (typeof func != 'function') {
+    throw new TypeError(FUNC_ERROR_TEXT);
+  }
+  if (isObject(options)) {
+    leading = 'leading' in options ? !!options.leading : leading;
+    trailing = 'trailing' in options ? !!options.trailing : trailing;
+  }
+  return debounce(func, wait, {
+    'leading': leading,
+    'maxWait': wait,
+    'trailing': trailing
+  });
+}
+
+/**
+ * Checks if `value` is the
+ * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+ * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+ * @example
+ *
+ * _.isObject({});
+ * // => true
+ *
+ * _.isObject([1, 2, 3]);
+ * // => true
+ *
+ * _.isObject(_.noop);
+ * // => true
+ *
+ * _.isObject(null);
+ * // => false
+ */
+function isObject(value) {
+  var type = typeof value;
+  return !!value && (type == 'object' || type == 'function');
+}
+
+/**
+ * Checks if `value` is object-like. A value is object-like if it's not `null`
+ * and has a `typeof` result of "object".
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+ * @example
+ *
+ * _.isObjectLike({});
+ * // => true
+ *
+ * _.isObjectLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isObjectLike(_.noop);
+ * // => false
+ *
+ * _.isObjectLike(null);
+ * // => false
+ */
+function isObjectLike(value) {
+  return !!value && typeof value == 'object';
+}
+
+/**
+ * Checks if `value` is classified as a `Symbol` primitive or object.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
+ * @example
+ *
+ * _.isSymbol(Symbol.iterator);
+ * // => true
+ *
+ * _.isSymbol('abc');
+ * // => false
+ */
+function isSymbol(value) {
+  return typeof value == 'symbol' ||
+    (isObjectLike(value) && objectToString.call(value) == symbolTag);
+}
+
+/**
+ * Converts `value` to a number.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to process.
+ * @returns {number} Returns the number.
+ * @example
+ *
+ * _.toNumber(3.2);
+ * // => 3.2
+ *
+ * _.toNumber(Number.MIN_VALUE);
+ * // => 5e-324
+ *
+ * _.toNumber(Infinity);
+ * // => Infinity
+ *
+ * _.toNumber('3.2');
+ * // => 3.2
+ */
+function toNumber(value) {
+  if (typeof value == 'number') {
+    return value;
+  }
+  if (isSymbol(value)) {
+    return NAN;
+  }
+  if (isObject(value)) {
+    var other = typeof value.valueOf == 'function' ? value.valueOf() : value;
+    value = isObject(other) ? (other + '') : other;
+  }
+  if (typeof value != 'string') {
+    return value === 0 ? value : +value;
+  }
+  value = value.replace(reTrim, '');
+  var isBinary = reIsBinary.test(value);
+  return (isBinary || reIsOctal.test(value))
+    ? freeParseInt(value.slice(2), isBinary ? 2 : 8)
+    : (reIsBadHex.test(value) ? NAN : +value);
+}
+
+module.exports = throttle;
+
 
 /***/ }),
 
@@ -844,602 +1602,6 @@ if (true) {
   module.exports = __webpack_require__(4448);
 } else {}
 
-
-/***/ }),
-
-/***/ 3082:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(true)
-		module.exports = factory(__webpack_require__(7044), __webpack_require__(3935));
-	else {}
-})(this, function(__WEBPACK_EXTERNAL_MODULE__1__, __WEBPACK_EXTERNAL_MODULE__2__) {
-return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __nested_webpack_require_757__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __nested_webpack_require_757__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__nested_webpack_require_757__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__nested_webpack_require_757__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__nested_webpack_require_757__.d = function(exports, name, getter) {
-/******/ 		if(!__nested_webpack_require_757__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__nested_webpack_require_757__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__nested_webpack_require_757__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __nested_webpack_require_757__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__nested_webpack_require_757__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __nested_webpack_require_757__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__nested_webpack_require_757__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__nested_webpack_require_757__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__nested_webpack_require_757__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__nested_webpack_require_757__.p = "";
-/******/
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __nested_webpack_require_757__(__nested_webpack_require_757__.s = 4);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports, __nested_webpack_require_4221__) {
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-if (false) { var throwOnDirectAccess, ReactIs; } else {
-  // By explicitly using `prop-types` you are opting into new production behavior.
-  // http://fb.me/prop-types-in-prod
-  module.exports = __nested_webpack_require_4221__(5)();
-}
-
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__1__;
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__2__;
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-// Tell whether the rect is visible, given an offset
-//
-// return: boolean
-module.exports = function (offset, rect, containmentRect) {
-  var offsetDir = offset.direction;
-  var offsetVal = offset.value; // Rules for checking different kind of offsets. In example if the element is
-  // 90px below viewport and offsetTop is 100, it is considered visible.
-
-  switch (offsetDir) {
-    case 'top':
-      return containmentRect.top + offsetVal < rect.top && containmentRect.bottom > rect.bottom && containmentRect.left < rect.left && containmentRect.right > rect.right;
-
-    case 'left':
-      return containmentRect.left + offsetVal < rect.left && containmentRect.bottom > rect.bottom && containmentRect.top < rect.top && containmentRect.right > rect.right;
-
-    case 'bottom':
-      return containmentRect.bottom - offsetVal > rect.bottom && containmentRect.left < rect.left && containmentRect.right > rect.right && containmentRect.top < rect.top;
-
-    case 'right':
-      return containmentRect.right - offsetVal > rect.right && containmentRect.left < rect.left && containmentRect.top < rect.top && containmentRect.bottom > rect.bottom;
-  }
-};
-
-/***/ }),
-/* 4 */
-/***/ (function(module, __webpack_exports__, __nested_webpack_require_6122__) {
-
-"use strict";
-__nested_webpack_require_6122__.r(__webpack_exports__);
-/* harmony export (binding) */ __nested_webpack_require_6122__.d(__webpack_exports__, "default", function() { return VisibilitySensor; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_6122__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__nested_webpack_require_6122__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __nested_webpack_require_6122__(2);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__nested_webpack_require_6122__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __nested_webpack_require_6122__(0);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__nested_webpack_require_6122__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _lib_is_visible_with_offset__WEBPACK_IMPORTED_MODULE_3__ = __nested_webpack_require_6122__(3);
-/* harmony import */ var _lib_is_visible_with_offset__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__nested_webpack_require_6122__.n(_lib_is_visible_with_offset__WEBPACK_IMPORTED_MODULE_3__);
-
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-function normalizeRect(rect) {
-  if (rect.width === undefined) {
-    rect.width = rect.right - rect.left;
-  }
-
-  if (rect.height === undefined) {
-    rect.height = rect.bottom - rect.top;
-  }
-
-  return rect;
-}
-
-var VisibilitySensor =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(VisibilitySensor, _React$Component);
-
-  function VisibilitySensor(props) {
-    var _this;
-
-    _classCallCheck(this, VisibilitySensor);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(VisibilitySensor).call(this, props));
-
-    _defineProperty(_assertThisInitialized(_this), "getContainer", function () {
-      return _this.props.containment || window;
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "addEventListener", function (target, event, delay, throttle) {
-      if (!_this.debounceCheck) {
-        _this.debounceCheck = {};
-      }
-
-      var timeout;
-      var func;
-
-      var later = function later() {
-        timeout = null;
-
-        _this.check();
-      };
-
-      if (throttle > -1) {
-        func = function func() {
-          if (!timeout) {
-            timeout = setTimeout(later, throttle || 0);
-          }
-        };
-      } else {
-        func = function func() {
-          clearTimeout(timeout);
-          timeout = setTimeout(later, delay || 0);
-        };
-      }
-
-      var info = {
-        target: target,
-        fn: func,
-        getLastTimeout: function getLastTimeout() {
-          return timeout;
-        }
-      };
-      target.addEventListener(event, info.fn);
-      _this.debounceCheck[event] = info;
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "startWatching", function () {
-      if (_this.debounceCheck || _this.interval) {
-        return;
-      }
-
-      if (_this.props.intervalCheck) {
-        _this.interval = setInterval(_this.check, _this.props.intervalDelay);
-      }
-
-      if (_this.props.scrollCheck) {
-        _this.addEventListener(_this.getContainer(), "scroll", _this.props.scrollDelay, _this.props.scrollThrottle);
-      }
-
-      if (_this.props.resizeCheck) {
-        _this.addEventListener(window, "resize", _this.props.resizeDelay, _this.props.resizeThrottle);
-      } // if dont need delayed call, check on load ( before the first interval fires )
-
-
-      !_this.props.delayedCall && _this.check();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "stopWatching", function () {
-      if (_this.debounceCheck) {
-        // clean up event listeners and their debounce callers
-        for (var debounceEvent in _this.debounceCheck) {
-          if (_this.debounceCheck.hasOwnProperty(debounceEvent)) {
-            var debounceInfo = _this.debounceCheck[debounceEvent];
-            clearTimeout(debounceInfo.getLastTimeout());
-            debounceInfo.target.removeEventListener(debounceEvent, debounceInfo.fn);
-            _this.debounceCheck[debounceEvent] = null;
-          }
-        }
-      }
-
-      _this.debounceCheck = null;
-
-      if (_this.interval) {
-        _this.interval = clearInterval(_this.interval);
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "check", function () {
-      var el = _this.node;
-      var rect;
-      var containmentRect; // if the component has rendered to null, dont update visibility
-
-      if (!el) {
-        return _this.state;
-      }
-
-      rect = normalizeRect(_this.roundRectDown(el.getBoundingClientRect()));
-
-      if (_this.props.containment) {
-        var containmentDOMRect = _this.props.containment.getBoundingClientRect();
-
-        containmentRect = {
-          top: containmentDOMRect.top,
-          left: containmentDOMRect.left,
-          bottom: containmentDOMRect.bottom,
-          right: containmentDOMRect.right
-        };
-      } else {
-        containmentRect = {
-          top: 0,
-          left: 0,
-          bottom: window.innerHeight || document.documentElement.clientHeight,
-          right: window.innerWidth || document.documentElement.clientWidth
-        };
-      } // Check if visibility is wanted via offset?
-
-
-      var offset = _this.props.offset || {};
-      var hasValidOffset = _typeof(offset) === "object";
-
-      if (hasValidOffset) {
-        containmentRect.top += offset.top || 0;
-        containmentRect.left += offset.left || 0;
-        containmentRect.bottom -= offset.bottom || 0;
-        containmentRect.right -= offset.right || 0;
-      }
-
-      var visibilityRect = {
-        top: rect.top >= containmentRect.top,
-        left: rect.left >= containmentRect.left,
-        bottom: rect.bottom <= containmentRect.bottom,
-        right: rect.right <= containmentRect.right
-      }; // https://github.com/joshwnj/react-visibility-sensor/pull/114
-
-      var hasSize = rect.height > 0 && rect.width > 0;
-      var isVisible = hasSize && visibilityRect.top && visibilityRect.left && visibilityRect.bottom && visibilityRect.right; // check for partial visibility
-
-      if (hasSize && _this.props.partialVisibility) {
-        var partialVisible = rect.top <= containmentRect.bottom && rect.bottom >= containmentRect.top && rect.left <= containmentRect.right && rect.right >= containmentRect.left; // account for partial visibility on a single edge
-
-        if (typeof _this.props.partialVisibility === "string") {
-          partialVisible = visibilityRect[_this.props.partialVisibility];
-        } // if we have minimum top visibility set by props, lets check, if it meets the passed value
-        // so if for instance element is at least 200px in viewport, then show it.
-
-
-        isVisible = _this.props.minTopValue ? partialVisible && rect.top <= containmentRect.bottom - _this.props.minTopValue : partialVisible;
-      } // Deprecated options for calculating offset.
-
-
-      if (typeof offset.direction === "string" && typeof offset.value === "number") {
-        console.warn("[notice] offset.direction and offset.value have been deprecated. They still work for now, but will be removed in next major version. Please upgrade to the new syntax: { %s: %d }", offset.direction, offset.value);
-        isVisible = _lib_is_visible_with_offset__WEBPACK_IMPORTED_MODULE_3___default()(offset, rect, containmentRect);
-      }
-
-      var state = _this.state; // notify the parent when the value changes
-
-      if (_this.state.isVisible !== isVisible) {
-        state = {
-          isVisible: isVisible,
-          visibilityRect: visibilityRect
-        };
-
-        _this.setState(state);
-
-        if (_this.props.onChange) _this.props.onChange(isVisible);
-      }
-
-      return state;
-    });
-
-    _this.state = {
-      isVisible: null,
-      visibilityRect: {}
-    };
-    return _this;
-  }
-
-  _createClass(VisibilitySensor, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.node = react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this);
-
-      if (this.props.active) {
-        this.startWatching();
-      }
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      this.stopWatching();
-    }
-  }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(prevProps) {
-      // re-register node in componentDidUpdate if children diffs [#103]
-      this.node = react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(this);
-
-      if (this.props.active && !prevProps.active) {
-        this.setState({
-          isVisible: null,
-          visibilityRect: {}
-        });
-        this.startWatching();
-      } else if (!this.props.active) {
-        this.stopWatching();
-      }
-    }
-  }, {
-    key: "roundRectDown",
-    value: function roundRectDown(rect) {
-      return {
-        top: Math.floor(rect.top),
-        left: Math.floor(rect.left),
-        bottom: Math.floor(rect.bottom),
-        right: Math.floor(rect.right)
-      };
-    }
-    /**
-     * Check if the element is within the visible viewport
-     */
-
-  }, {
-    key: "render",
-    value: function render() {
-      if (this.props.children instanceof Function) {
-        return this.props.children({
-          isVisible: this.state.isVisible,
-          visibilityRect: this.state.visibilityRect
-        });
-      }
-
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.Children.only(this.props.children);
-    }
-  }]);
-
-  return VisibilitySensor;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-_defineProperty(VisibilitySensor, "defaultProps", {
-  active: true,
-  partialVisibility: false,
-  minTopValue: 0,
-  scrollCheck: false,
-  scrollDelay: 250,
-  scrollThrottle: -1,
-  resizeCheck: false,
-  resizeDelay: 250,
-  resizeThrottle: -1,
-  intervalCheck: true,
-  intervalDelay: 100,
-  delayedCall: false,
-  offset: {},
-  containment: null,
-  children: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null)
-});
-
-_defineProperty(VisibilitySensor, "propTypes", {
-  onChange: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
-  active: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-  partialVisibility: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf(["top", "right", "bottom", "left"])]),
-  delayedCall: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-  offset: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.shape({
-    top: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    left: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    bottom: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    right: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number
-  }), // deprecated offset property
-  prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.shape({
-    direction: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf(["top", "right", "bottom", "left"]),
-    value: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number
-  })]),
-  scrollCheck: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-  scrollDelay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-  scrollThrottle: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-  resizeCheck: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-  resizeDelay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-  resizeThrottle: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-  intervalCheck: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-  intervalDelay: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-  containment: typeof window !== "undefined" ? prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(window.Element) : prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.any,
-  children: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.element, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func]),
-  minTopValue: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number
-});
-
-
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __nested_webpack_require_20664__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var ReactPropTypesSecret = __nested_webpack_require_20664__(6);
-
-function emptyFunction() {}
-function emptyFunctionWithReset() {}
-emptyFunctionWithReset.resetWarningCache = emptyFunction;
-
-module.exports = function() {
-  function shim(props, propName, componentName, location, propFullName, secret) {
-    if (secret === ReactPropTypesSecret) {
-      // It is still safe when called from React.
-      return;
-    }
-    var err = new Error(
-      'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
-      'Use PropTypes.checkPropTypes() to call them. ' +
-      'Read more at http://fb.me/use-check-prop-types'
-    );
-    err.name = 'Invariant Violation';
-    throw err;
-  };
-  shim.isRequired = shim;
-  function getShim() {
-    return shim;
-  };
-  // Important!
-  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
-  var ReactPropTypes = {
-    array: shim,
-    bool: shim,
-    func: shim,
-    number: shim,
-    object: shim,
-    string: shim,
-    symbol: shim,
-
-    any: shim,
-    arrayOf: getShim,
-    element: shim,
-    elementType: shim,
-    instanceOf: getShim,
-    node: shim,
-    objectOf: getShim,
-    oneOf: getShim,
-    oneOfType: getShim,
-    shape: getShim,
-    exact: getShim,
-
-    checkPropTypes: emptyFunctionWithReset,
-    resetWarningCache: emptyFunction
-  };
-
-  ReactPropTypes.PropTypes = ReactPropTypes;
-
-  return ReactPropTypes;
-};
-
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
-
-module.exports = ReactPropTypesSecret;
-
-
-/***/ })
-/******/ ]);
-});
 
 /***/ }),
 

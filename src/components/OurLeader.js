@@ -20,14 +20,14 @@ const OurLeader = () => {
     return (
         <section style={{ background: "#f8f9fa" }} className="py-2">
             <div className="container py-5">
-                <h1 className="line-red">Our Business Transformation Consulting Leaders</h1>
+                <h1 className="line-red" data-aos="fade-up">Our Business Transformation Consulting Leaders</h1>
                 <div className="row py-4">
                     <div className="col-xl-6">
                         <p className='paragraph capabilities-style'>
                             <Leaders
                                 Image={venkatesh}
                                 Name={"Venkatesh Rajamani"}
-                                Caption={"Founder & Trainer"}
+                                Caption={"Founder & Executive Director"}
                                 Twitter={"https://twitter.com/arunronline"}
                                 Linkedin={"https://www.linkedin.com/in/arunvignesh-ramakrishnan/"}
                                 Slack={"https://tryscrum-community.slack.com"}
@@ -40,7 +40,7 @@ const OurLeader = () => {
                     <div className="col-xl-6 position-relative">
                         <p className='paragraph-visit-profile'>
                             <p className="text-style-leader" data-aos='fade-left'>
-                                Arunvignesh is a Professional Agile trainer in tryScrum.com. He is a Professional Scrum Trainer® wit Scrum.org, Certified Team Coach® (CTC) with Scrum Alliance, and ICAgile Authorized Instructor.
+                            Venkatesh is a Founder of tryScrum.com, a Management Consulting firm. He is also a Professional Scrum Trainer® with Scrum.org, a Certified Enterprise Coach® with Scrum
                             </p>
                             <p className="text-style-visit-profile">
                                 <button className='leader-button'>
@@ -48,19 +48,12 @@ const OurLeader = () => {
                                 </button>
                             </p>
                             <div className="all_link">
-                                <a href="" target="_blank" className='link_one'>
+                                <a href="https://twitter.com/AtVenk" target="_blank" className='link_one'>
                                     <i className="fa twitter"><img src={twitter} /></i>
                                 </a>
 
-                                <a href="" target="_blank" className='link_two'>
+                                <a href="https://www.linkedin.com/in/venkatesh-rajamani-b071b15/" target="_blank" className='link_two'>
                                     <i className="fa linkedin"><img src={linkedin} /></i>
-                                </a>
-
-                                <a href="" target="_blank" className='link_three'>
-                                    <i className="fa slack"><img src={slack} /></i>
-                                </a>
-                                <a href="" target="_blank" className='link_four'>
-                                    <i className="fa meetup"><img src={meetup} /></i>
                                 </a>
                             </div>
                         </p>
@@ -80,19 +73,12 @@ const OurLeader = () => {
                                 </button>
                             </p>
                             <div className="all_link">
-                                <a href="" target="_blank" className='link_one'>
+                                <a href="https://twitter.com/arunronline" target="_blank" className='link_one'>
                                     <i className="fa twitter"><img src={twitter} /></i>
                                 </a>
 
-                                <a href="" target="_blank" className='link_two'>
+                                <a href="https://www.linkedin.com/in/arunvignesh-ramakrishnan" target="_blank" className='link_two'>
                                     <i className="fa linkedin"><img src={linkedin} /></i>
-                                </a>
-
-                                <a href="" target="_blank" className='link_three'>
-                                    <i className="fa slack"><img src={slack} /></i>
-                                </a>
-                                <a href="" target="_blank" className='link_four'>
-                                    <i className="fa meetup"><img src={meetup} /></i>
                                 </a>
                             </div>
                         </p>
